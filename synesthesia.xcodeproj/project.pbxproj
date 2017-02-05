@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79E9D900037D79F69E3CE3DE /* Pods_synesthesia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A68C82B6FED0562756B601 /* Pods_synesthesia.framework */; };
+		D2675DDE1E4563B3007A02A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2675DDD1E4563B3007A02A1 /* AppDelegate.swift */; };
+		D2675DE31E4563B3007A02A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE11E4563B3007A02A1 /* Main.storyboard */; };
+		D2675DE51E4563B3007A02A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE41E4563B3007A02A1 /* Assets.xcassets */; };
+		D2675DE81E4563B3007A02A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */; };
+		D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2675DEF1E4563B4007A02A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2675DD21E4563B3007A02A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2675DD91E4563B3007A02A1;
+			remoteInfo = synesthesia;
+		};
+		D2675DFA1E4563B4007A02A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2675DD21E4563B3007A02A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2675DD91E4563B3007A02A1;
+			remoteInfo = synesthesia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09D63BCDA0D36F133D73E7FC /* Pods-synesthesia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synesthesia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-synesthesia/Pods-synesthesia.debug.xcconfig"; sourceTree = "<group>"; };
+		35E23FC3F5F94A25F02C34E0 /* Pods-synesthesia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-synesthesia.release.xcconfig"; path = "Pods/Target Support Files/Pods-synesthesia/Pods-synesthesia.release.xcconfig"; sourceTree = "<group>"; };
+		D2675DDA1E4563B3007A02A1 /* synesthesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = synesthesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2675DDD1E4563B3007A02A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2675DE21E4563B3007A02A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2675DE41E4563B3007A02A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2675DE71E4563B3007A02A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2675DE91E4563B3007A02A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2675DEE1E4563B4007A02A1 /* synesthesiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2675DF91E4563B4007A02A1 /* synesthesiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		F1A68C82B6FED0562756B601 /* Pods_synesthesia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synesthesia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2675DD71E4563B3007A02A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E9D900037D79F69E3CE3DE /* Pods_synesthesia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2675DEB1E4563B4007A02A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2675DF61E4563B4007A02A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ADA24430FBF8E68DF1B13E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09D63BCDA0D36F133D73E7FC /* Pods-synesthesia.debug.xcconfig */,
+				35E23FC3F5F94A25F02C34E0 /* Pods-synesthesia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2675DD11E4563B3007A02A1 = {
+			isa = PBXGroup;
+			children = (
+				D2675DDC1E4563B3007A02A1 /* synesthesia */,
+				D2675DDB1E4563B3007A02A1 /* Products */,
+				4ADA24430FBF8E68DF1B13E3 /* Pods */,
+				EC777ECDE9E9D16F0FABAD58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2675DDB1E4563B3007A02A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2675DDA1E4563B3007A02A1 /* synesthesia.app */,
+				D2675DEE1E4563B4007A02A1 /* synesthesiaTests.xctest */,
+				D2675DF91E4563B4007A02A1 /* synesthesiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2675DDC1E4563B3007A02A1 /* synesthesia */ = {
+			isa = PBXGroup;
+			children = (
+				D2675DDD1E4563B3007A02A1 /* AppDelegate.swift */,
+				D2675DE11E4563B3007A02A1 /* Main.storyboard */,
+				D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */,
+				D2675DE41E4563B3007A02A1 /* Assets.xcassets */,
+				D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */,
+				D2675DE91E4563B3007A02A1 /* Info.plist */,
+			);
+			path = synesthesia;
+			sourceTree = "<group>";
+		};
+		EC777ECDE9E9D16F0FABAD58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1A68C82B6FED0562756B601 /* Pods_synesthesia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2675DD91E4563B3007A02A1 /* synesthesia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2675E021E4563B4007A02A1 /* Build configuration list for PBXNativeTarget "synesthesia" */;
+			buildPhases = (
+				2E9642F571FA0AD3E713C7C0 /* [CP] Check Pods Manifest.lock */,
+				D2675DD61E4563B3007A02A1 /* Sources */,
+				D2675DD71E4563B3007A02A1 /* Frameworks */,
+				D2675DD81E4563B3007A02A1 /* Resources */,
+				E19807AC4789911C3F94FA2A /* [CP] Embed Pods Frameworks */,
+				515BACB1B432BCDC8F5A924F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = synesthesia;
+			productName = synesthesia;
+			productReference = D2675DDA1E4563B3007A02A1 /* synesthesia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2675DED1E4563B4007A02A1 /* synesthesiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2675E051E4563B4007A02A1 /* Build configuration list for PBXNativeTarget "synesthesiaTests" */;
+			buildPhases = (
+				D2675DEA1E4563B4007A02A1 /* Sources */,
+				D2675DEB1E4563B4007A02A1 /* Frameworks */,
+				D2675DEC1E4563B4007A02A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2675DF01E4563B4007A02A1 /* PBXTargetDependency */,
+			);
+			name = synesthesiaTests;
+			productName = synesthesiaTests;
+			productReference = D2675DEE1E4563B4007A02A1 /* synesthesiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2675DF81E4563B4007A02A1 /* synesthesiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2675E081E4563B4007A02A1 /* Build configuration list for PBXNativeTarget "synesthesiaUITests" */;
+			buildPhases = (
+				D2675DF51E4563B4007A02A1 /* Sources */,
+				D2675DF61E4563B4007A02A1 /* Frameworks */,
+				D2675DF71E4563B4007A02A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2675DFB1E4563B4007A02A1 /* PBXTargetDependency */,
+			);
+			name = synesthesiaUITests;
+			productName = synesthesiaUITests;
+			productReference = D2675DF91E4563B4007A02A1 /* synesthesiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2675DD21E4563B3007A02A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Marcus Shannon";
+				TargetAttributes = {
+					D2675DD91E4563B3007A02A1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D2675DED1E4563B4007A02A1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2675DD91E4563B3007A02A1;
+					};
+					D2675DF81E4563B4007A02A1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2675DD91E4563B3007A02A1;
+					};
+				};
+			};
+			buildConfigurationList = D2675DD51E4563B3007A02A1 /* Build configuration list for PBXProject "synesthesia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2675DD11E4563B3007A02A1;
+			productRefGroup = D2675DDB1E4563B3007A02A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2675DD91E4563B3007A02A1 /* synesthesia */,
+				D2675DED1E4563B4007A02A1 /* synesthesiaTests */,
+				D2675DF81E4563B4007A02A1 /* synesthesiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2675DD81E4563B3007A02A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2675DE81E4563B3007A02A1 /* LaunchScreen.storyboard in Resources */,
+				D2675DE51E4563B3007A02A1 /* Assets.xcassets in Resources */,
+				D2675DE31E4563B3007A02A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2675DEC1E4563B4007A02A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2675DF71E4563B4007A02A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E9642F571FA0AD3E713C7C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		515BACB1B432BCDC8F5A924F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-synesthesia/Pods-synesthesia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E19807AC4789911C3F94FA2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-synesthesia/Pods-synesthesia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2675DD61E4563B3007A02A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2675DDE1E4563B3007A02A1 /* AppDelegate.swift in Sources */,
+				D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2675DEA1E4563B4007A02A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2675DF51E4563B4007A02A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2675DF01E4563B4007A02A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2675DD91E4563B3007A02A1 /* synesthesia */;
+			targetProxy = D2675DEF1E4563B4007A02A1 /* PBXContainerItemProxy */;
+		};
+		D2675DFB1E4563B4007A02A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2675DD91E4563B3007A02A1 /* synesthesia */;
+			targetProxy = D2675DFA1E4563B4007A02A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2675DE11E4563B3007A02A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2675DE21E4563B3007A02A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2675DE71E4563B3007A02A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2675E001E4563B4007A02A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2675E011E4563B4007A02A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2675E031E4563B4007A02A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D63BCDA0D36F133D73E7FC /* Pods-synesthesia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = synesthesia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2675E041E4563B4007A02A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E23FC3F5F94A25F02C34E0 /* Pods-synesthesia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = synesthesia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D2675E061E4563B4007A02A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = synesthesiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/synesthesia.app/synesthesia";
+			};
+			name = Debug;
+		};
+		D2675E071E4563B4007A02A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = synesthesiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/synesthesia.app/synesthesia";
+			};
+			name = Release;
+		};
+		D2675E091E4563B4007A02A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = synesthesiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = synesthesia;
+			};
+			name = Debug;
+		};
+		D2675E0A1E4563B4007A02A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = synesthesiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = synesthesia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2675DD51E4563B3007A02A1 /* Build configuration list for PBXProject "synesthesia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2675E001E4563B4007A02A1 /* Debug */,
+				D2675E011E4563B4007A02A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2675E021E4563B4007A02A1 /* Build configuration list for PBXNativeTarget "synesthesia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2675E031E4563B4007A02A1 /* Debug */,
+				D2675E041E4563B4007A02A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2675E051E4563B4007A02A1 /* Build configuration list for PBXNativeTarget "synesthesiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2675E061E4563B4007A02A1 /* Debug */,
+				D2675E071E4563B4007A02A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2675E081E4563B4007A02A1 /* Build configuration list for PBXNativeTarget "synesthesiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2675E091E4563B4007A02A1 /* Debug */,
+				D2675E0A1E4563B4007A02A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2675DD21E4563B3007A02A1 /* Project object */;
+}

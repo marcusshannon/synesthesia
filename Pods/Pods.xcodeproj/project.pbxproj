@@ -1,0 +1,1916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0156437A2AD7C38858883F190110154D /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08851DA7B0D956319DCF9735C3FE0365 /* Gloss.framework */; };
+		02B49935CFC484C532E5BD7BC9E58378 /* NUPNPScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF593378EF71210B7E7898A45EE7F22 /* NUPNPScanner.swift */; };
+		03E99FAF135ACEE4247287C45BD84187 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC57F514C906BDB1B3F821C8EB11994 /* Utilities.swift */; };
+		0B7F9732663EF1180CB1655585E2FC85 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D72AC94D0126717422E6C7DFBE4702 /* Encoder.swift */; };
+		0C11011B58F53FC0448CB65E4BD72B37 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 35971CEB629F89BCF2B164D64C580EA3 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F99B76B0464D7FF2DA32CB2382D176E /* SwiftyHue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F65A6953DA50998B06C12E5D7A70959 /* SwiftyHue-dummy.m */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E82422DC2B4AB3B032FE25048FB9EF /* Timeline.swift */; };
+		19398E017EA6405F6CB0BA5D711F86C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C45B7AFCC0951B8C26D697E3262A46A7 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DE19DE96390C69F6606153506FD205C /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 569C8067C22BC4F71E894FD0E19552BA /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23CF8E2BDD0511547A492FAEDD8CC5CF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBE120E93D8493ECFFBDE36989CB3AD /* ReplaceMe.swift */; };
+		270C791A8BB7E656E1C11420115AF4B8 /* Log-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8A586F68BBF200AC5D3D782470F84D /* Log-dummy.m */; };
+		274C57112119667C4DE5AF38687FFDFD /* LoggerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8711FA3BE4F798DE6A0079F09B3C69C /* LoggerConfig.swift */; };
+		28DB8048EC32242FE2B4640BAC90E97C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */; };
+		2994531D1F984A84E237D82AB3C8E0D5 /* IPScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC757F4C55E57D28379FD3FEE67C76E9 /* IPScanner.swift */; };
+		29A20FD36372DE0AA931CD1B4910A78E /* SensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BB6A90314AFF9F4157C04A70E9A5D /* SensorConfig.swift */; };
+		2A0CB705DE04B13429BB06D81A21ED81 /* OpenCloseSensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63A5A45FE301807C267AB69984FDD2 /* OpenCloseSensorState.swift */; };
+		2AA2358951B341D1298F7699A556D1AC /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BCA0F22732565ED228459B5DF21AC8 /* Formatters.swift */; };
+		2C396D4A09547722251D602CBC47E291 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD76C53441FB54042B89E90D423AE07 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D29BF9B172EE05B1D93584F8C6B4B89 /* PresenceSensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A97526E6A72E0C23A762942FD4E4C7 /* PresenceSensorConfig.swift */; };
+		30C488B83E64A5C42DA44B280B94D293 /* AsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D335FCF52819480F1BF01DF4DA992F /* AsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3145CF29D7BDDB9415B3288BF74BEABE /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576FA825F53D1DEAC63EA544D029112 /* Operators.swift */; };
+		3206774B1D2212D7431F728A0B752018 /* BridgeFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F58CB0202B8B6CF32EB15823BD67C2 /* BridgeFinder.swift */; };
+		348335E2F21583E0AAD104F7D700385D /* RuleCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4D813A36F75171AE4B7C84257752A /* RuleCondition.swift */; };
+		351C36E9BFEC657759D9C486CA8CD0D6 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B0E14087B59C819CF5312503A5D737 /* CocoaAsyncSocket.framework */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2318FDEFBB17BF9E98B4174FA9FF3FE /* TaskDelegate.swift */; };
+		37FD2E8A01716C040A8B827CDB4E54E1 /* Pods-synesthesia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD96D52885A3136D7CEB2245C1EBE58 /* Pods-synesthesia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		389076B9161B8E24B52C76B67BDABCD8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2330DC0C67013F06D19FC7424D610F1F /* Alamofire.framework */; };
+		393CB1FE9BBBA227E539B1D9111E9C37 /* DaylightSensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8625D040EB9BEF60F505FDA617767A /* DaylightSensorState.swift */; };
+		3B4D8E6BCBC1A33CCB73EFBB03B28EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */; };
+		3D985887D193536959DDD4165B1188E5 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F69914E35DA07F905703C6E87CFFA3A /* Schedule.swift */; };
+		3F49E6CB1B1EBB6E39BA0A2DB07D67A3 /* SwitchSensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37860417BBEA3721D43B4522ED0EDDC8 /* SwitchSensorConfig.swift */; };
+		3F6B4D0875172F89FDC69F41ED90707C /* DaylightSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B85CCD8DA580B3DC40F41834AA5E4B9 /* DaylightSensor.swift */; };
+		412B1F1E7F1CC5B9F0BDFB1EA817980D /* SwitchSensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD612F25F8F483F6393491FB21ADAC14 /* SwitchSensorState.swift */; };
+		46990A7B96600D585048B787C45C6B61 /* SwiftyHue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87A976EB0F5CA743D948B2F58B937B0 /* SwiftyHue.swift */; };
+		4B5F8E304D990C5672DEB266032384D8 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3605FADE45ACFC2C2921E501E6D200B6 /* Group.swift */; };
+		4D8C620F3A6902B7D7ACE9ADBE1169C0 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 486D224751D69D9213235DBAFB406973 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		505370FA89DA4CD8839E1FC6C5F37C9B /* BridgeSendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FD9F872B4104935EB95B05B5AD14BC /* BridgeSendAPI.swift */; };
+		527C92E683EF10B7220E3FE130ACE3E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCC7C7CBBA638CC258C73EF08F0399 /* Request.swift */; };
+		55AC34F4400660072DF60B9CD685D4D3 /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644A676ED7B60C0B9D11F6AA9DD0A498 /* Log.framework */; };
+		5624DF7D34E3F1D966426C668A6DB529 /* TestRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113C38413457AE1B09FED8A134449E2 /* TestRequester.swift */; };
+		5815CEE7344BAF05B0006BF1DBA709E2 /* BridgeAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E840E9C4CB9B1BF9EF75E83AEB7BAE95 /* BridgeAuthenticator.swift */; };
+		5894C32B5FE5DD2778F15303962DC923 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A19988932217A59BFDCDB5A90F413302 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5920201749B17FFD2D945A38337DBB54 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E502A8A9DF7BD24E05B2AFDDECA44A /* Rule.swift */; };
+		5952B201148D0EB070254A896346B7DD /* SoftwareUpdateStatusDeviceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B806FA05363C14E2779C1E6FC297A7ED /* SoftwareUpdateStatusDeviceTypes.swift */; };
+		5B2A4B4E789E719CC5B15DD44308EDD5 /* SensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F071E5083E1BC68002553194BF79B80C /* SensorState.swift */; };
+		5C71D24ECB558E3000AB234197EB2C41 /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F471223A34FAA08B1892BA24ED1064E8 /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F2D16D3A332907DB7B85E6858F0AA1C /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E98A3C406399289C8721D9D1BE25224 /* Dictionary+Extension.swift */; };
+		60C0F86F1F314B183B5E8D419E410393 /* HumiditySensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BECE5F62683442C94A0F06E46A310 /* HumiditySensorState.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26B9E0A07779B7251B15C416684E23F /* DispatchQueue+Alamofire.swift */; };
+		6225FAAF7706AD00C2FF03B7AC9F30EB /* GenericFlagSensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9D066FEBEF5D6404A60FA40B06935 /* GenericFlagSensorState.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D67B56FE92ABB3A664AE90148CB18F /* ServerTrustPolicy.swift */; };
+		6411E714C4D2A9F3982981B5E0E59080 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733B8428742ED5B7F65703EFDD8334A3 /* CFNetwork.framework */; };
+		69AD90EE5FF1D7D9253656880FC74655 /* HueBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052314ED1CC18E98C135C0CE0560785F /* HueBridge.swift */; };
+		6F5E9884E59F853C549D7D04DE9B7768 /* BridgeResourcesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23096E489E0C14D740B9ABA23D133401 /* BridgeResourcesCache.swift */; };
+		76A35714431A1EB612DF919BF902CD7C /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4337BFA6CB9656066B426FBE28821EE /* Formatter.swift */; };
+		7935EECBDFDD5E46FF20F9BA20D1425A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60DD406C9E5FC76CA0EDB6CBC6F924 /* Logger.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D651999766213038DB378461E114040 /* SessionDelegate.swift */; };
+		7B93C3406B20045F314DA985EE6FB023 /* Benchmarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0708C8946BBA23F2CB7A80CAE4B0BEEE /* Benchmarker.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C2AF312406FDBFA2E90E745C0453B /* Result.swift */; };
+		7D90599C473273BE8106A09239978406 /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48417D00DA1E2734593E623F5C84E4AE /* Gloss.swift */; };
+		7EBCC3E5D93A6DBB578F61DFDBB5344E /* OpenCloseSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781FC173E6216A61FDBFF3560FC2915E /* OpenCloseSensor.swift */; };
+		7FA8484B5BFD27B8F5F3E8C55A0BE9E1 /* TemperatureSensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028AB06E543287DFD59AD78133327F0 /* TemperatureSensorConfig.swift */; };
+		8049CE94CDEBB5A91D9DC77ACD2034C2 /* HumiditySensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F16198937BBEB9B950E951A68931307 /* HumiditySensorConfig.swift */; };
+		8402B3ABA919499584C6B8E21B9BD8A5 /* NSDateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC16908CF5C5C702AEB08A990ABFD5 /* NSDateFormatter+Extension.swift */; };
+		8FE6F77C0BC102DBE6F8EA6135465FF7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C55D0C084563E0728715E57288296 /* Theme.swift */; };
+		909058C0B0299CB36F642DEA45F2A2C4 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31204DACDC93A335CE4B7CD0B0999E4D /* Themes.swift */; };
+		910F20B51D29CE371FE8B619E7AABA67 /* SwiftyHue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A579BE29D465FB1A78CDEF369A2F996 /* SwiftyHue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A09D128EDD468E764C7728AA5A71F7 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716BAFB7C142EF53B14C1A02C49F635F /* Light.swift */; };
+		9C230949B870619240828F9D9B50A599 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D219B8D28166BBB317C6736362C1E2A /* Utilities.swift */; };
+		9C6BDE63F375250A13D85C963DEC1D49 /* BridgeResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163AFEFE31D8DDAE6C191A34A4ED22CA /* BridgeResultParser.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B480ED79B31BABF80E3F96D243CEBA4 /* AFError.swift */; };
+		9EECF90FDB69EA01EFE800C5BC2A86EB /* Pods-synesthesia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F6B26CD3ED09A2864B2123F78B619A /* Pods-synesthesia-dummy.m */; };
+		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */; };
+		A24CE480465C33B180D4CFBD99EA457B /* SoftwareUpdateStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67F366B2B723063601B6548AC093704 /* SoftwareUpdateStatus.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAEEFB06F08985DC69EB1F8FD0B022E /* NetworkReachabilityManager.swift */; };
+		A423422379F8F13607FABEBEE83D6D10 /* BridgeAuthenticatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39E88DB0729CCD832405193F0A0C9B7 /* BridgeAuthenticatorDelegate.swift */; };
+		A8645037AEFBBCEBB78670F49FB97ABA /* GenericStatusSensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3386E36C59FFB7890A2AE9C765BF2F29 /* GenericStatusSensorConfig.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E767AEBF7F7B39803E50BFFF8AD65C5 /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A308FA5CB370290C6F411BA8CBEB68 /* SessionManager.swift */; };
+		B0D40829D97E5041C0A83D77624B214D /* DaylightSensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57828DE25D562FA058021A0B578A7FF2 /* DaylightSensorConfig.swift */; };
+		B4EFAD5873739EEE53426FFA3FBE95C5 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413DBC7410BBC3AEA26303386612678 /* Sensor.swift */; };
+		B55D94DF3870422633D8A8E8DD8234DC /* HueBridgeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082C006B759FBDAD3F397B3120B7EE0C /* HueBridgeIcon.swift */; };
+		B5E2D49A89975CAB59275F4D72E3856D /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF04EDA404C709402E4AF2002625CBD /* Scene.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B82BA63805A2591E1816DC27DC280C /* MultipartFormData.swift */; };
+		B666AC6A2DBA61EF37BE522E73AB831C /* ResourceCacheHeartbeatProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2510CCB65A6CC36342417EE5C834B /* ResourceCacheHeartbeatProcessor.swift */; };
+		BA5AC5FE9F72D8709AF5A29284758717 /* Log-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F999BA4723106F3F48A1C38344A3DA /* Log-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA63F9B1989A88F13FFB45E386C2E190 /* PortalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392CCA71D10CD2179A781705230E9129 /* PortalState.swift */; };
+		BAC10A4D4443F82AD21A0C8510CCDA47 /* SwiftyHue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C29B3A76A3B7139F723E752CD5D6ABD /* SwiftyHue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C87B854E62F4E3ABDE68ADAEC0A8CA /* Validation.swift */; };
+		BD30CA66ED326743A031085757944A67 /* RuleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BEDA4059394D2B74BF57F3982480E7 /* RuleAction.swift */; };
+		BD878AE47D3F49FC86A470A9D9AD7BC6 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9500EF2D4C5F1E8F765D89C129C7E987 /* Backup.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79BC66C6299699C6337B89AB07BAE31 /* ParameterEncoding.swift */; };
+		C1E44EA762A78FAB7B78B4EBE4F10BED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */; };
+		C292E1DF1D7600ECFA5644E27411AD9F /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64579F27EB3CDC4508736FDE56FF51DD /* ExtensionDictionary.swift */; };
+		C4F4D78B37CCD1E2DA82ABA60906175F /* GenericStatusSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB0F948E379AD9370F5983C674A52E6 /* GenericStatusSensor.swift */; };
+		C5552E5F4465B85AC0C74721699B2049 /* WhitelistEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F4894AA20ECEA6C48CD0121DFD1B40 /* WhitelistEntry.swift */; };
+		CA0CB24027E64090A6C2B6F179453E2E /* GenericFlagSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E406A1CDA3F11672CDA2FA57528E5D /* GenericFlagSensor.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76A658C09D6313EE899619A2F6CD8B /* Response.swift */; };
+		CCC11353C4065E21D58BEC00309C2FF2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25846BF4249F7FD5E7895E8425D928C7 /* Security.framework */; };
+		CF8A64C6F404D3354B944A80F8F5F461 /* ScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FD8AF7DC06D9F5BE76F0486722AE10 /* ScannerDelegate.swift */; };
+		D0222C90DA2EAB3BB12D999B11EE9783 /* GenericStatusSensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540186D58372F4DF0368B265FB77C3F4 /* GenericStatusSensorState.swift */; };
+		D202E7A14CF8E8402FB48A551D926E4A /* HumiditySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D95DE969620BD08BCB1C3A198441D0D /* HumiditySensor.swift */; };
+		D416CC9D014759848DB89D15D4DD6FA3 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F3346D4BC9B42B3A82EFB514EA0432A /* AsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49CA86ECF5549D76A7ED37F83E5CD65 /* SSDPScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC713F98FE96C9EFB9CD9D284AFBC33 /* SSDPScanner.swift */; };
+		D8B0F59DD06BDC4D058D38D3D90A3578 /* BridgeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82666D0D6908A4217BB8A45BA08AB2C /* BridgeConfiguration.swift */; };
+		D9EDB339B1B052ABC108E7CE073730AC /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2670CB341E39B8784BE9B83FA0B3FD1 /* AppData.swift */; };
+		DBB6B310F4078CBBD687153968FC971E /* PresenceSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A4782C9972949C92DD70F7606A03C /* PresenceSensor.swift */; };
+		DC92EF306D20379603F3647ABF682533 /* BridgeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF8E8C7987C890D824D03955F0B1BB /* BridgeValidator.swift */; };
+		DD5E2B2C552BAEDE46DF4C4D03F5A9D4 /* TemperatureSensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A1F3690E2103922973E41DA38593B /* TemperatureSensorState.swift */; };
+		DE2BF825D7B7FADB907198AB5BCA3456 /* GenericFlagSensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CD84E80BB45CEC6D199A20FE30B8A9 /* GenericFlagSensorConfig.swift */; };
+		E1247BDD2195F9EA1EA71B8583C5BDED /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321F1FAD3CC87F0ACF72342DF1036617 /* Decoder.swift */; };
+		E2901091F098107EB7D8DE2CBFFE88CD /* LightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6888E61C491E3A048036FFB8822EA189 /* LightState.swift */; };
+		E445107EFDAD525758D9D9C7FCB4329F /* BridgeResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419AF84813B2C9A7FFA65B07A4CB412 /* BridgeResource.swift */; };
+		E574A9365A79BD121A7EA31C77DBC87B /* TemperatureSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD0A1455E0FCE17482A2B31266F6B3 /* TemperatureSensor.swift */; };
+		E6679E50B1801DB62D44D7E55D6379FD /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CA80BA8DE4E7907C63F75DE6938E74 /* ExtensionArray.swift */; };
+		E7C269120652D24E500E217B35F9FDD3 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB24985147799DEDB981261AC0D894 /* Scanner.swift */; };
+		E7E3C23509E0ABC5FB2944E99B71FE26 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC418C95FA4EF6A465E34641CE1BE7 /* Error.swift */; };
+		EF4253BF11904F813FF4AA77315D4608 /* ScheduleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96287B688C083253939576857B8F6F7A /* ScheduleCommand.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B9E0B1D0A6B60F5B3CC9A622B8C6D /* Notifications.swift */; };
+		F0B3F35E6ADCB2A5CA81D3698670731B /* HeartbeatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2483C520878B91216AC36DDBC38FEEBD /* HeartbeatManager.swift */; };
+		F0E57361E4F341FF77F5CEBF69891292 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D263000E41B43749580C01FB2B79E767 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F263CD99F16F4924E2CAB4A817A6AC6A /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE56BC863572C8A8D5F12DCE042631E /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C3BE12E6921FCA8D1973ED6978039B /* ResponseSerialization.swift */; };
+		F74861D230E8EA85A5FEED680D155C22 /* Gloss-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F6C456EA6FB6A17722E5EBC4D75274 /* Gloss-dummy.m */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A76314E7EA07C02964A0280908015 /* Alamofire.swift */; };
+		F91E7A2D1344DE8F972E79C93B61DC7E /* SwitchSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F000CBE79774E9501D9167508704BB /* SwitchSensor.swift */; };
+		F9961B37D6B87919BC0AF3B0BF469C07 /* PresenceSensorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B858280235CF0060E6A00EEE798059B /* PresenceSensorState.swift */; };
+		FA3799B61F6F27DEB9CA3A98AAFF7523 /* BridgeFinderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FC217F9563DC7D0D7925A29DEA345A /* BridgeFinderDelegate.swift */; };
+		FC06F196A47F2657455AA209102EBEF8 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B90130C9DFF971DB6ADBAA32F6CB867 /* CocoaAsyncSocket-dummy.m */; };
+		FC65B49EB7E124807B8C94A2328747A9 /* OpenCloseSensorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26D261B1A4616C8C509C5A47F1A108C /* OpenCloseSensorConfig.swift */; };
+		FE93D9700A4D23A730AB498C9677D950 /* BridgeAccessConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C16A4D92EF79A0A313F9B431E672A36 /* BridgeAccessConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1776D05ECF250A2635A83DFEA2ABAA67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		1AA1564C59C493D61155EDEA18CD9721 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C69D9B6A709F788E7F5A5E2BDCF612;
+			remoteInfo = Gloss;
+		};
+		4A5973245D71475F1C112FA99E6EE55B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C69D9B6A709F788E7F5A5E2BDCF612;
+			remoteInfo = Gloss;
+		};
+		69C2F133E1B73031BF8BC79BCB5F6826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40751EA11DAC76A50CC6779479D6408F;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		7DE9C33A75AE4FD7B6DD2E185BC94D23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36BDBFF9AA4B788FEC5F33AC618AC4DC;
+			remoteInfo = Log;
+		};
+		9AF9795EE4090EED86F1A9CB0C004458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36BDBFF9AA4B788FEC5F33AC618AC4DC;
+			remoteInfo = Log;
+		};
+		D09B99F11EBE52277E5C05EC31BB03D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26ADDC28456868EFC4ABF40BE8AD1321;
+			remoteInfo = SwiftyHue;
+		};
+		E9F2C8700CF4067BB06C996939B4DBD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40751EA11DAC76A50CC6779479D6408F;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		EB7140973235FE0EE975067C8EA26673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019AECE5F0DF24757631A3A9E8CE3150 /* AKTesterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTesterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h; sourceTree = "<group>"; };
+		047A5670EAC4391DDB887C8B642AA40B /* AKMorphingOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMorphingOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		0491D316E76E75C22B14C986CE4E1F6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049A76314E7EA07C02964A0280908015 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		052314ED1CC18E98C135C0CE0560785F /* HueBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HueBridge.swift; path = Sources/BridgeServices/BridgeFinder/HueBridge.swift; sourceTree = "<group>"; };
+		0667926CB23D83C46C78B17D2BAB8C0A /* EZOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZOutput.h; path = iOS/AudioKit.framework/Headers/EZOutput.h; sourceTree = "<group>"; };
+		06C3BE12E6921FCA8D1973ED6978039B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		0708C8946BBA23F2CB7A80CAE4B0BEEE /* Benchmarker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Benchmarker.swift; path = Source/Benchmarker.swift; sourceTree = "<group>"; };
+		082C006B759FBDAD3F397B3120B7EE0C /* HueBridgeIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HueBridgeIcon.swift; path = Sources/BridgeServices/BridgeFinder/HueBridgeIcon.swift; sourceTree = "<group>"; };
+		08851DA7B0D956319DCF9735C3FE0365 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A0F503A3959A788F900D2DF5EF4E4D /* AKLowShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowShelfParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		08E2641EEE9C6BE3E3FB968D8380C044 /* AKMoogLadderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMoogLadderAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMoogLadderAudioUnit.h; sourceTree = "<group>"; };
+		08EB6214E547C25421CCCDC1A649BAC9 /* EZAudio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudio.h; path = iOS/AudioKit.framework/Headers/EZAudio.h; sourceTree = "<group>"; };
+		0983338B9E04CBD1DB75FFD06B9E7F10 /* EZAudioPlotGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlotGL.h; path = iOS/AudioKit.framework/Headers/EZAudioPlotGL.h; sourceTree = "<group>"; };
+		0A32EDDEB6608A762C780CAD46261368 /* AKLowPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKLowPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKLowPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		0A76A658C09D6313EE899619A2F6CD8B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		0B90130C9DFF971DB6ADBAA32F6CB867 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		0D40B47B7DD29BDD41C026937B26B8EC /* AKKorgLowPassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKKorgLowPassFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKKorgLowPassFilterAudioUnit.h; sourceTree = "<group>"; };
+		0EB5B99F96707895AE8FEF5BA418118F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10A1EBFC0A4259C89BD923778DF82989 /* AKFluteAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFluteAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFluteAudioUnit.h; sourceTree = "<group>"; };
+		11E502A8A9DF7BD24E05B2AFDDECA44A /* Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rule.swift; path = Sources/Base/BridgeResourceModels/Rule/Rule.swift; sourceTree = "<group>"; };
+		1264B0116FB655ABEA315A98A7F280FC /* AKChowningReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKChowningReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKChowningReverbAudioUnit.h; sourceTree = "<group>"; };
+		127BB6A90314AFF9F4157C04A70E9A5D /* SensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/SensorConfig.swift; sourceTree = "<group>"; };
+		12A1A4C64F082C700EDB9D209355FCAA /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		12E79A774D42498BA700935E95726E6D /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13ACB190E5B2A30B5A5C2F97FAC7A7F5 /* AKBalancerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBalancerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h; sourceTree = "<group>"; };
+		14618EF6FB4955760E40018343B97F29 /* AKThreePoleLowpassFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKThreePoleLowpassFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKThreePoleLowpassFilterAudioUnit.h; sourceTree = "<group>"; };
+		1610A9BFA82A05BBE6C3F829A6D7E8BA /* Pods-synesthesia-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-synesthesia-resources.sh"; sourceTree = "<group>"; };
+		163AFEFE31D8DDAE6C191A34A4ED22CA /* BridgeResultParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeResultParser.swift; path = Sources/BridgeServices/BridgeFinder/Validator/BridgeResultParser.swift; sourceTree = "<group>"; };
+		16C87B854E62F4E3ABDE68ADAEC0A8CA /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		180D4FC548EE63F7E4245249CD3F009D /* EZRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRecorder.h; path = iOS/AudioKit.framework/Headers/EZRecorder.h; sourceTree = "<group>"; };
+		19A9DB48164BE76E4D6CD95CFC385AB9 /* AKCombFilterReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCombFilterReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKCombFilterReverbAudioUnit.h; sourceTree = "<group>"; };
+		1B1BECE5F62683442C94A0F06E46A310 /* HumiditySensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HumiditySensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/HumiditySensor/HumiditySensorState.swift; sourceTree = "<group>"; };
+		1B7F910A18D8F3001AC3F45B31EB4A5C /* AKOfflineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOfflineRenderer.h; path = iOS/AudioKit.framework/Headers/AKOfflineRenderer.h; sourceTree = "<group>"; };
+		1B858280235CF0060E6A00EEE798059B /* PresenceSensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenceSensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/PresenceSensor/PresenceSensorState.swift; sourceTree = "<group>"; };
+		1B85CCD8DA580B3DC40F41834AA5E4B9 /* DaylightSensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaylightSensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/DaylightSensor/DaylightSensor.swift; sourceTree = "<group>"; };
+		1C29B3A76A3B7139F723E752CD5D6ABD /* SwiftyHue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyHue-umbrella.h"; sourceTree = "<group>"; };
+		1E9258B0B2D0CEE7027DF56A283F64F9 /* AKTremoloAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTremoloAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTremoloAudioUnit.h; sourceTree = "<group>"; };
+		1E98A3C406399289C8721D9D1BE25224 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Extension.swift"; path = "Sources/Base/Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		1F65A6953DA50998B06C12E5D7A70959 /* SwiftyHue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyHue-dummy.m"; sourceTree = "<group>"; };
+		1FA9D066FEBEF5D6404A60FA40B06935 /* GenericFlagSensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericFlagSensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/GenericFlagSensor/GenericFlagSensorState.swift; sourceTree = "<group>"; };
+		20AB24985147799DEDB981261AC0D894 /* Scanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scanner.swift; path = Sources/BridgeServices/BridgeFinder/Scanner/Scanner.swift; sourceTree = "<group>"; };
+		23096E489E0C14D740B9ABA23D133401 /* BridgeResourcesCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeResourcesCache.swift; path = Sources/Base/BridgeResourcesCache.swift; sourceTree = "<group>"; };
+		2330DC0C67013F06D19FC7424D610F1F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2479A0C1D86083AA9A500397B4A7994F /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = iOS/AudioKit.framework/Headers/TPCircularBuffer.h; sourceTree = "<group>"; };
+		248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2483C520878B91216AC36DDBC38FEEBD /* HeartbeatManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartbeatManager.swift; path = Sources/Base/HeartbeatManager.swift; sourceTree = "<group>"; };
+		24CA80BA8DE4E7907C63F75DE6938E74 /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
+		25846BF4249F7FD5E7895E8425D928C7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2D1A60656FFE4CE76C21AF2992E98BD8 /* AKMetalBarAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMetalBarAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMetalBarAudioUnit.h; sourceTree = "<group>"; };
+		2DD35353F4A32A3A645D1301A42181CB /* AKResonantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKResonantFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKResonantFilterAudioUnit.h; sourceTree = "<group>"; };
+		2F1310EF0BB7E639CCF8F721A31BDF3E /* AKAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAudioUnit.h; sourceTree = "<group>"; };
+		31204DACDC93A335CE4B7CD0B0999E4D /* Themes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Themes.swift; path = Source/Extensions/Themes.swift; sourceTree = "<group>"; };
+		321F1FAD3CC87F0ACF72342DF1036617 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Decoder.swift; sourceTree = "<group>"; };
+		3386E36C59FFB7890A2AE9C765BF2F29 /* GenericStatusSensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericStatusSensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/GenericStatusSensor/GenericStatusSensorConfig.swift; sourceTree = "<group>"; };
+		33EB6FE738BC069177771E99A43077B0 /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
+		35971CEB629F89BCF2B164D64C580EA3 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		35B0E14087B59C819CF5312503A5D737 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3605FADE45ACFC2C2921E501E6D200B6 /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Sources/Base/BridgeResourceModels/Group.swift; sourceTree = "<group>"; };
+		37860417BBEA3721D43B4522ED0EDDC8 /* SwitchSensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchSensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/SwitchSensor/SwitchSensorConfig.swift; sourceTree = "<group>"; };
+		392CCA71D10CD2179A781705230E9129 /* PortalState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PortalState.swift; path = Sources/Base/BridgeResourceModels/PortalState.swift; sourceTree = "<group>"; };
+		3C16A4D92EF79A0A313F9B431E672A36 /* BridgeAccessConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeAccessConfig.swift; path = Sources/Base/BridgeAccessConfig.swift; sourceTree = "<group>"; };
+		3C9B6D75D13FE26A1DFE36AD015A8920 /* AKOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		3CAEEFB06F08985DC69EB1F8FD0B022E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		3E767AEBF7F7B39803E50BFFF8AD65C5 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		3EB98B70AD5E4C134AC7B7875F16DF26 /* AKBitCrusherAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBitCrusherAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBitCrusherAudioUnit.h; sourceTree = "<group>"; };
+		3F69914E35DA07F905703C6E87CFFA3A /* Schedule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Sources/Base/BridgeResourceModels/Schedule/Schedule.swift; sourceTree = "<group>"; };
+		41FD9F872B4104935EB95B05B5AD14BC /* BridgeSendAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeSendAPI.swift; path = Sources/Base/BridgeSendAPI.swift; sourceTree = "<group>"; };
+		42DB2AEB1D4E20CD568B83FD431002DE /* AKPitchShifterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPitchShifterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPitchShifterAudioUnit.h; sourceTree = "<group>"; };
+		436D113FD405D00230C10DCDA8BA1AED /* AKFlatFrequencyResponseReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFlatFrequencyResponseReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbAudioUnit.h; sourceTree = "<group>"; };
+		46F000CBE79774E9501D9167508704BB /* SwitchSensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchSensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/SwitchSensor/SwitchSensor.swift; sourceTree = "<group>"; };
+		48417D00DA1E2734593E623F5C84E4AE /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
+		486D224751D69D9213235DBAFB406973 /* AsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = Source/RunLoop/AsyncSocket.m; sourceTree = "<group>"; };
+		498B544275058D2309C225CD385A281C /* AKRolandTB303FilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKRolandTB303FilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKRolandTB303FilterAudioUnit.h; sourceTree = "<group>"; };
+		49DD0A1455E0FCE17482A2B31266F6B3 /* TemperatureSensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TemperatureSensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/TemperatureSensor/TemperatureSensor.swift; sourceTree = "<group>"; };
+		4D651999766213038DB378461E114040 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4FC713F98FE96C9EFB9CD9D284AFBC33 /* SSDPScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSDPScanner.swift; path = Sources/BridgeServices/BridgeFinder/Scanner/SSDPScanner.swift; sourceTree = "<group>"; };
+		540186D58372F4DF0368B265FB77C3F4 /* GenericStatusSensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericStatusSensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/GenericStatusSensor/GenericStatusSensorState.swift; sourceTree = "<group>"; };
+		553C1AC4BD3C7FA09609B09194C2AC93 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C2714FD9967C9E20AD18A9A775DD90 /* AKCostelloReverbAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKCostelloReverbAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKCostelloReverbAudioUnit.h; sourceTree = "<group>"; };
+		569C8067C22BC4F71E894FD0E19552BA /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		56DCB4BE9D516929D6B199F39AD5E34A /* AKHighShelfParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighShelfParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		56FD8AF7DC06D9F5BE76F0486722AE10 /* ScannerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScannerDelegate.swift; path = Sources/BridgeServices/BridgeFinder/Scanner/ScannerDelegate.swift; sourceTree = "<group>"; };
+		57828DE25D562FA058021A0B578A7FF2 /* DaylightSensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaylightSensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/DaylightSensor/DaylightSensorConfig.swift; sourceTree = "<group>"; };
+		587FEE0D92295B2F94E03C382F746522 /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Gloss.modulemap; sourceTree = "<group>"; };
+		5AF59E36DDE913828EFCB567C71DADDA /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
+		5B142D60B713E31FB9EF7B46E9669C76 /* AKFMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFMOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		5E325485D9E10199061720CE489B0001 /* AKAmplitudeTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h; sourceTree = "<group>"; };
+		5E5CF216657AE07168AC7EF4CA47ADE4 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = iOS/AudioKit.framework; sourceTree = "<group>"; };
+		5EF64E4280A377EE2509886815864ACB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F3346D4BC9B42B3A82EFB514EA0432A /* AsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = Source/RunLoop/AsyncSocket.h; sourceTree = "<group>"; };
+		6143D42AD89DB1ED052E3BED6A80E19C /* AKBoosterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBoosterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBoosterAudioUnit.h; sourceTree = "<group>"; };
+		61D335FCF52819480F1BF01DF4DA992F /* AsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = Source/RunLoop/AsyncUdpSocket.h; sourceTree = "<group>"; };
+		624C2F13B8C02C869548241C63100ECA /* EZAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlayer.h; path = iOS/AudioKit.framework/Headers/EZAudioPlayer.h; sourceTree = "<group>"; };
+		6413DBC7410BBC3AEA26303386612678 /* Sensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/Sensor.swift; sourceTree = "<group>"; };
+		644A676ED7B60C0B9D11F6AA9DD0A498 /* Log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64579F27EB3CDC4508736FDE56FF51DD /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
+		674745E3B68128BD9703C526AC46FE5D /* AKClipperAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClipperAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKClipperAudioUnit.h; sourceTree = "<group>"; };
+		68401D2E929B4B0892750B9B047ABC2C /* AudioKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AudioKit.h; path = iOS/AudioKit.framework/Headers/AudioKit.h; sourceTree = "<group>"; };
+		6888E61C491E3A048036FFB8822EA189 /* LightState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LightState.swift; path = Sources/Base/BridgeResourceModels/LightState.swift; sourceTree = "<group>"; };
+		68CD84E80BB45CEC6D199A20FE30B8A9 /* GenericFlagSensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericFlagSensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/GenericFlagSensor/GenericFlagSensorConfig.swift; sourceTree = "<group>"; };
+		6A44C9E6BB99C0228BCEC42740A65C1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7A4782C9972949C92DD70F7606A03C /* PresenceSensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenceSensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/PresenceSensor/PresenceSensor.swift; sourceTree = "<group>"; };
+		6AA37BBBB2E26AD79AE9AD5D248B3234 /* AKPhaseDistortionOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		6AF593378EF71210B7E7898A45EE7F22 /* NUPNPScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NUPNPScanner.swift; path = Sources/BridgeServices/BridgeFinder/Scanner/NUPNPScanner.swift; sourceTree = "<group>"; };
+		6B480ED79B31BABF80E3F96D243CEBA4 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		6C2893E558A357A731B80CC91CE1D237 /* AKConvolutionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKConvolutionAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKConvolutionAudioUnit.h; sourceTree = "<group>"; };
+		6C7B3AC2821BFCF82EFEBB5152CF78FC /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		6D3D269A7C2A971FFC88D4935C9B9BE6 /* EZMicrophone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZMicrophone.h; path = iOS/AudioKit.framework/Headers/EZMicrophone.h; sourceTree = "<group>"; };
+		6D64AE570DD0064038985B067C1F580F /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		6EC57F514C906BDB1B3F821C8EB11994 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Source/Supporting Files/Utilities.swift"; sourceTree = "<group>"; };
+		6F0F5B3CCDD0255D6DACCDF2CBA1EF1C /* Pods-synesthesia-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-synesthesia-frameworks.sh"; sourceTree = "<group>"; };
+		6F86F04ABE4637524F75B94C342C1481 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		716BAFB7C142EF53B14C1A02C49F635F /* Light.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Light.swift; path = Sources/Base/BridgeResourceModels/Light.swift; sourceTree = "<group>"; };
+		733B8428742ED5B7F65703EFDD8334A3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		74BCA0F22732565ED228459B5DF21AC8 /* Formatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formatters.swift; path = Source/Extensions/Formatters.swift; sourceTree = "<group>"; };
+		76A6D872A0B765BA16B4CBE0B9764E81 /* SwiftyHue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyHue.modulemap; sourceTree = "<group>"; };
+		77EC418C95FA4EF6A465E34641CE1BE7 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Base/BridgeResourceModels/Error.swift; sourceTree = "<group>"; };
+		781FC173E6216A61FDBFF3560FC2915E /* OpenCloseSensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenCloseSensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/OpenCloseSensor/OpenCloseSensor.swift; sourceTree = "<group>"; };
+		7CD1C8E9B1BD0B8F916DB246F16DD361 /* AKPannerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPannerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPannerAudioUnit.h; sourceTree = "<group>"; };
+		7D95DE969620BD08BCB1C3A198441D0D /* HumiditySensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HumiditySensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/HumiditySensor/HumiditySensor.swift; sourceTree = "<group>"; };
+		7E3E7EA9878307EF0ADD0A0CDC3C0072 /* AKModalResonanceFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKModalResonanceFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKModalResonanceFilterAudioUnit.h; sourceTree = "<group>"; };
+		7E466CA6F5F108FBE4FDAD29885DC00C /* AKClarinetAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKClarinetAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKClarinetAudioUnit.h; sourceTree = "<group>"; };
+		7EC5C010F6963DC2CAFD214995AD9B9C /* Log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Log.framework; path = Log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F16198937BBEB9B950E951A68931307 /* HumiditySensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HumiditySensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/HumiditySensor/HumiditySensorConfig.swift; sourceTree = "<group>"; };
+		7FF576BFC4043D5EB0F4CE5AF4AEEDA5 /* AKWhiteNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKWhiteNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKWhiteNoiseAudioUnit.h; sourceTree = "<group>"; };
+		806D2EBAE6C2A44FA54DD09E2C7C841C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		809FE26C804369FDF99D081AB7F58B7C /* AKPeakingParametricEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPeakingParametricEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		80A308FA5CB370290C6F411BA8CBEB68 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		80D72AC94D0126717422E6C7DFBE4702 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
+		8292C2D505061EFBA344B2050DD898D2 /* EZAudioDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDisplayLink.h; path = iOS/AudioKit.framework/Headers/EZAudioDisplayLink.h; sourceTree = "<group>"; };
+		8419AF84813B2C9A7FFA65B07A4CB412 /* BridgeResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeResource.swift; path = Sources/Base/BridgeResourceModels/BridgeResource.swift; sourceTree = "<group>"; };
+		85F6B26CD3ED09A2864B2123F78B619A /* Pods-synesthesia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-synesthesia-dummy.m"; sourceTree = "<group>"; };
+		862C55D0C084563E0728715E57288296 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Source/Theme.swift; sourceTree = "<group>"; };
+		87CD3AA41C8FDA626A132B606D7DE0EF /* AKMandolinAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMandolinAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h; sourceTree = "<group>"; };
+		8AD96D52885A3136D7CEB2245C1EBE58 /* Pods-synesthesia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-synesthesia-umbrella.h"; sourceTree = "<group>"; };
+		8AFBF36D5B403C5556803A663B66C88D /* SwiftyHue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyHue-prefix.pch"; sourceTree = "<group>"; };
+		8C3ECF29420694F5FD1991CFEFF7DBF6 /* AKBandPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBandPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		8CAB4D5E54895C0A7F9A74B104A46524 /* AKPhaseLockedVocoderAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseLockedVocoderAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h; sourceTree = "<group>"; };
+		8D0E172F2071FD77A3A1932891B906F2 /* Log-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Log-prefix.pch"; sourceTree = "<group>"; };
+		8D219B8D28166BBB317C6736362C1E2A /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/Base/Utilities.swift; sourceTree = "<group>"; };
+		8EF40109D0BD84CAD42BF0621776D340 /* AKTanhDistortionAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKTanhDistortionAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKTanhDistortionAudioUnit.h; sourceTree = "<group>"; };
+		90169A046A920C39F924A05658B5F521 /* AKPhaseDistortionOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPhaseDistortionOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		91D1F462C852CA85F97B13AC2CF9CB4C /* EZPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZPlot.h; path = iOS/AudioKit.framework/Headers/EZPlot.h; sourceTree = "<group>"; };
+		91EB497E5A7634DA69210790627B891B /* Pods-synesthesia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-synesthesia.modulemap"; sourceTree = "<group>"; };
+		92B37AAF27797270FE72EC84093ED47A /* AKFMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		944C72479327FEC774DD65C19DD7934F /* Pods-synesthesia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-synesthesia.debug.xcconfig"; sourceTree = "<group>"; };
+		94C5948ADAB964182ED8D5378023764F /* AKEqualizerFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKEqualizerFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKEqualizerFilterAudioUnit.h; sourceTree = "<group>"; };
+		9500EF2D4C5F1E8F765D89C129C7E987 /* Backup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Backup.swift; path = Sources/Base/BridgeResourceModels/Backup.swift; sourceTree = "<group>"; };
+		96287B688C083253939576857B8F6F7A /* ScheduleCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduleCommand.swift; path = Sources/Base/BridgeResourceModels/Schedule/ScheduleCommand.swift; sourceTree = "<group>"; };
+		96F58CB0202B8B6CF32EB15823BD67C2 /* BridgeFinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeFinder.swift; path = Sources/BridgeServices/BridgeFinder/BridgeFinder.swift; sourceTree = "<group>"; };
+		99A2510CCB65A6CC36342417EE5C834B /* ResourceCacheHeartbeatProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceCacheHeartbeatProcessor.swift; path = Sources/Base/ResourceCacheHeartbeatProcessor.swift; sourceTree = "<group>"; };
+		9A579BE29D465FB1A78CDEF369A2F996 /* SwiftyHue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyHue.h; path = Sources/SwiftyHue.h; sourceTree = "<group>"; };
+		9B4D16E8745228BD3CD72CDBC4AA70BE /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gloss.framework; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB90A911BEDBB5FFB4ADD1E44229B36 /* Pods-synesthesia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-synesthesia-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9FE56BC863572C8A8D5F12DCE042631E /* AsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = Source/RunLoop/AsyncUdpSocket.m; sourceTree = "<group>"; };
+		A19988932217A59BFDCDB5A90F413302 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		A2318FDEFBB17BF9E98B4174FA9FF3FE /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		A231C0125EF8A3177FDAEA8DD46C96D1 /* AKHighPassButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKHighPassButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKHighPassButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		A26B9E0A07779B7251B15C416684E23F /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		A2FC16908CF5C5C702AEB08A990ABFD5 /* NSDateFormatter+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateFormatter+Extension.swift"; path = "Sources/Base/NSDateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		A61F9FD53FA561E06E8FA0359E1F95EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79BC66C6299699C6337B89AB07BAE31 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		A82666D0D6908A4217BB8A45BA08AB2C /* BridgeConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeConfiguration.swift; path = Sources/Base/BridgeResourceModels/BridgeConfiguration.swift; sourceTree = "<group>"; };
+		A8711FA3BE4F798DE6A0079F09B3C69C /* LoggerConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerConfig.swift; path = Sources/Base/Logger/LoggerConfig.swift; sourceTree = "<group>"; };
+		A9C78EE23C809FF99E673125CB47C3B6 /* AKOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		AAB0F948E379AD9370F5983C674A52E6 /* GenericStatusSensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericStatusSensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/GenericStatusSensor/GenericStatusSensor.swift; sourceTree = "<group>"; };
+		AC5F1C478DF3266098089D49C2D914F2 /* AKStringResonatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStringResonatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKStringResonatorAudioUnit.h; sourceTree = "<group>"; };
+		AE8625D040EB9BEF60F505FDA617767A /* DaylightSensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DaylightSensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/DaylightSensor/DaylightSensorState.swift; sourceTree = "<group>"; };
+		B02639CF60B95D035DDADA2BC8463AF0 /* AKFrequencyTrackerAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFrequencyTrackerAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h; sourceTree = "<group>"; };
+		B052358F941A59BDF2EA039ECA2C78A3 /* AKPWMOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		B26D261B1A4616C8C509C5A47F1A108C /* OpenCloseSensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenCloseSensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/OpenCloseSensor/OpenCloseSensorConfig.swift; sourceTree = "<group>"; };
+		B4337BFA6CB9656066B426FBE28821EE /* Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = Source/Formatter.swift; sourceTree = "<group>"; };
+		B4E82422DC2B4AB3B032FE25048FB9EF /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		B4F999BA4723106F3F48A1C38344A3DA /* Log-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Log-umbrella.h"; sourceTree = "<group>"; };
+		B576FA825F53D1DEAC63EA544D029112 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		B5DB0B92BBBCB8442B1E50075EE2DF0D /* AKPluckedStringAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPluckedStringAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPluckedStringAudioUnit.h; sourceTree = "<group>"; };
+		B7B15FACDF5D01554DB1662D4908A71E /* EZAudioFFT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFFT.h; path = iOS/AudioKit.framework/Headers/EZAudioFFT.h; sourceTree = "<group>"; };
+		B806FA05363C14E2779C1E6FC297A7ED /* SoftwareUpdateStatusDeviceTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftwareUpdateStatusDeviceTypes.swift; path = Sources/Base/BridgeResourceModels/SoftwareUpdateStatusDeviceTypes.swift; sourceTree = "<group>"; };
+		B840A8A145861B8FD11F0DE950C927A8 /* AKDripAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDripAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDripAudioUnit.h; sourceTree = "<group>"; };
+		BCBCC7C7CBBA638CC258C73EF08F0399 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		C0E406A1CDA3F11672CDA2FA57528E5D /* GenericFlagSensor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericFlagSensor.swift; path = Sources/Base/BridgeResourceModels/Sensors/GenericFlagSensor/GenericFlagSensor.swift; sourceTree = "<group>"; };
+		C1A97526E6A72E0C23A762942FD4E4C7 /* PresenceSensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenceSensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/PresenceSensor/PresenceSensorConfig.swift; sourceTree = "<group>"; };
+		C1C2FD2CDDEC90E5E84396F701C58EE5 /* AKAmplitudeEnvelopeAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAmplitudeEnvelopeAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAmplitudeEnvelopeAudioUnit.h; sourceTree = "<group>"; };
+		C293F79D5D96A263A2D6CAC841BF234A /* Log.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Log.xcconfig; sourceTree = "<group>"; };
+		C31E9B4753659C238415F132C8478B95 /* AKFormantFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFormantFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKFormantFilterAudioUnit.h; sourceTree = "<group>"; };
+		C3235015B1D4211B8E4DC9D81657C841 /* AKOperationEffectAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationEffectAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h; sourceTree = "<group>"; };
+		C39E88DB0729CCD832405193F0A0C9B7 /* BridgeAuthenticatorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeAuthenticatorDelegate.swift; path = Sources/BridgeServices/BridgeAuthenticator/BridgeAuthenticatorDelegate.swift; sourceTree = "<group>"; };
+		C45B7AFCC0951B8C26D697E3262A46A7 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		C5A4C664A4187D12901E38144050D922 /* SwiftyHue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyHue.framework; path = SwiftyHue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71BCD16C292F02035251DA991B9F769 /* EZAudioFloatConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatConverter.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h; sourceTree = "<group>"; };
+		C91B9E0B1D0A6B60F5B3CC9A622B8C6D /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		CBEB9CFFDE29E19DAF51447D54495FBC /* EZAudioFloatData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFloatData.h; path = iOS/AudioKit.framework/Headers/EZAudioFloatData.h; sourceTree = "<group>"; };
+		CC60DD406C9E5FC76CA0EDB6CBC6F924 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
+		CC757F4C55E57D28379FD3FEE67C76E9 /* IPScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPScanner.swift; path = Sources/BridgeServices/BridgeFinder/Scanner/IPScanner.swift; sourceTree = "<group>"; };
+		CCC106F02F2BABADEA8E5095ABE01AC0 /* AKAutoWahAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKAutoWahAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKAutoWahAudioUnit.h; sourceTree = "<group>"; };
+		CD612F25F8F483F6393491FB21ADAC14 /* SwitchSensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchSensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/SwitchSensor/SwitchSensorState.swift; sourceTree = "<group>"; };
+		CD8C0ABFD87D382159998E74205FDF83 /* AKPWMOscillatorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPWMOscillatorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPWMOscillatorAudioUnit.h; sourceTree = "<group>"; };
+		CF2EA8E435E6657C1CDFF0EED3CF0A77 /* Pods-synesthesia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-synesthesia.release.xcconfig"; sourceTree = "<group>"; };
+		CFA16280C258F9A1019B14C1B54C3C40 /* AKMorphingOscillatorBankAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKMorphingOscillatorBankAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h; sourceTree = "<group>"; };
+		CFFB6C4C8C1A3530E8E047FC32C6A6E1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D013F65A72A71B7AEF4C958261379F5F /* AKToneFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKToneFilterAudioUnit.h; sourceTree = "<group>"; };
+		D0BEDA4059394D2B74BF57F3982480E7 /* RuleAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleAction.swift; path = Sources/Base/BridgeResourceModels/Rule/RuleAction.swift; sourceTree = "<group>"; };
+		D0E4D813A36F75171AE4B7C84257752A /* RuleCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleCondition.swift; path = Sources/Base/BridgeResourceModels/Rule/RuleCondition.swift; sourceTree = "<group>"; };
+		D263000E41B43749580C01FB2B79E767 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		D67F366B2B723063601B6548AC093704 /* SoftwareUpdateStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftwareUpdateStatus.swift; path = Sources/Base/BridgeResourceModels/SoftwareUpdateStatus.swift; sourceTree = "<group>"; };
+		D9078482285855A70D58B40FCDBB6C12 /* SwiftyHue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyHue.xcconfig; sourceTree = "<group>"; };
+		DA4A263123E823768EFAB5C211174E0C /* EZAudioFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioFile.h; path = iOS/AudioKit.framework/Headers/EZAudioFile.h; sourceTree = "<group>"; };
+		DAB6F65598E311EE765F993AE95FA2EC /* Pods-synesthesia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-synesthesia-acknowledgements.plist"; sourceTree = "<group>"; };
+		DAF04EDA404C709402E4AF2002625CBD /* Scene.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scene.swift; path = Sources/Base/BridgeResourceModels/Scene.swift; sourceTree = "<group>"; };
+		DBFF8E8C7987C890D824D03955F0B1BB /* BridgeValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeValidator.swift; path = Sources/BridgeServices/BridgeFinder/Validator/BridgeValidator.swift; sourceTree = "<group>"; };
+		DDBE120E93D8493ECFFBDE36989CB3AD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Sources/Base/ReplaceMe.swift; sourceTree = "<group>"; };
+		DF030DBD56EB36F3A825C596CA5D4923 /* AudioKit-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AudioKit-Swift.h"; path = "iOS/AudioKit.framework/Headers/AudioKit-Swift.h"; sourceTree = "<group>"; };
+		DF5A1F3690E2103922973E41DA38593B /* TemperatureSensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TemperatureSensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/TemperatureSensor/TemperatureSensorState.swift; sourceTree = "<group>"; };
+		E26256CD0452808D0FA18CFF641B736D /* AKStereoFieldLimiterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKStereoFieldLimiterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKStereoFieldLimiterAudioUnit.h; sourceTree = "<group>"; };
+		E4FC217F9563DC7D0D7925A29DEA345A /* BridgeFinderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeFinderDelegate.swift; path = Sources/BridgeServices/BridgeFinder/BridgeFinderDelegate.swift; sourceTree = "<group>"; };
+		E5C84B65E9F5444866A0F4B3B113E23F /* AKOperationGeneratorAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKOperationGeneratorAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h; sourceTree = "<group>"; };
+		E7D67B56FE92ABB3A664AE90148CB18F /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		E7F6C456EA6FB6A17722E5EBC4D75274 /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
+		E840E9C4CB9B1BF9EF75E83AEB7BAE95 /* BridgeAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BridgeAuthenticator.swift; path = Sources/BridgeServices/BridgeAuthenticator/BridgeAuthenticator.swift; sourceTree = "<group>"; };
+		E87A976EB0F5CA743D948B2F58B937B0 /* SwiftyHue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyHue.swift; path = Sources/Base/SwiftyHue.swift; sourceTree = "<group>"; };
+		E9981DDF82EE30DF2B84A356BD3ADC26 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		EB660F3D935AEC24C935986AAABEB555 /* Log.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Log.modulemap; sourceTree = "<group>"; };
+		EB8B59A66AEFA559F827F2D5F0D51145 /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = iOS/AudioKit.framework/Headers/EZAudioPlot.h; sourceTree = "<group>"; };
+		EE63A5A45FE301807C267AB69984FDD2 /* OpenCloseSensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenCloseSensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/OpenCloseSensor/OpenCloseSensorState.swift; sourceTree = "<group>"; };
+		F028AB06E543287DFD59AD78133327F0 /* TemperatureSensorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TemperatureSensorConfig.swift; path = Sources/Base/BridgeResourceModels/Sensors/TemperatureSensor/TemperatureSensorConfig.swift; sourceTree = "<group>"; };
+		F071E5083E1BC68002553194BF79B80C /* SensorState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SensorState.swift; path = Sources/Base/BridgeResourceModels/Sensors/SensorState.swift; sourceTree = "<group>"; };
+		F113C38413457AE1B09FED8A134449E2 /* TestRequester.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestRequester.swift; path = Sources/Base/TestRequester.swift; sourceTree = "<group>"; };
+		F17C2AF312406FDBFA2E90E745C0453B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		F2670CB341E39B8784BE9B83FA0B3FD1 /* AppData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppData.swift; path = Sources/Base/BridgeResourceModels/AppData.swift; sourceTree = "<group>"; };
+		F2837BFE53DE323D3C3CB639BF0D6CBD /* Pods_synesthesia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_synesthesia.framework; path = "Pods-synesthesia.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B82BA63805A2591E1816DC27DC280C /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		F2F4894AA20ECEA6C48CD0121DFD1B40 /* WhitelistEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhitelistEntry.swift; path = Sources/Base/BridgeResourceModels/WhitelistEntry.swift; sourceTree = "<group>"; };
+		F46B17AF342E789650B32584EAAB713F /* EZAudioUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioUtilities.h; path = iOS/AudioKit.framework/Headers/EZAudioUtilities.h; sourceTree = "<group>"; };
+		F471223A34FAA08B1892BA24ED1064E8 /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
+		F7E199FD062A130B8997D2EC3AA20C0B /* AKBandRejectButterworthFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKBandRejectButterworthFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKBandRejectButterworthFilterAudioUnit.h; sourceTree = "<group>"; };
+		F82A3480A6A4EE7D9C3BCFD6B39F0C47 /* AKPinkNoiseAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKPinkNoiseAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKPinkNoiseAudioUnit.h; sourceTree = "<group>"; };
+		FBD76C53441FB54042B89E90D423AE07 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		FCFD7E1E33E9C664404C5A103F57B929 /* AKToneComplementFilterAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKToneComplementFilterAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKToneComplementFilterAudioUnit.h; sourceTree = "<group>"; };
+		FD83C8DFD8F98C3AB4FFAB27CB5B45A4 /* AKDCBlockAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKDCBlockAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKDCBlockAudioUnit.h; sourceTree = "<group>"; };
+		FE215BB80C0DC771E1D7E70A84CD8658 /* EZAudioDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioDevice.h; path = iOS/AudioKit.framework/Headers/EZAudioDevice.h; sourceTree = "<group>"; };
+		FF8A586F68BBF200AC5D3D782470F84D /* Log-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Log-dummy.m"; sourceTree = "<group>"; };
+		FFCCE3E0AE8BCADE73174C29D643745A /* AKVariableDelayAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKVariableDelayAudioUnit.h; path = iOS/AudioKit.framework/Headers/AKVariableDelayAudioUnit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		404A54AD2802BA4294FDFB6EF846D99B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D8E6BCBC1A33CCB73EFBB03B28EC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C8449D452EA74935BDFE8E43767849F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19398E017EA6405F6CB0BA5D711F86C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749F5DFA98EF709905FD5946B45ACC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6411E714C4D2A9F3982981B5E0E59080 /* CFNetwork.framework in Frameworks */,
+				28DB8048EC32242FE2B4640BAC90E97C /* Foundation.framework in Frameworks */,
+				CCC11353C4065E21D58BEC00309C2FF2 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96FC2AE0ADFDE2AC593BFF287405842E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389076B9161B8E24B52C76B67BDABCD8 /* Alamofire.framework in Frameworks */,
+				351C36E9BFEC657759D9C486CA8CD0D6 /* CocoaAsyncSocket.framework in Frameworks */,
+				C1E44EA762A78FAB7B78B4EBE4F10BED /* Foundation.framework in Frameworks */,
+				0156437A2AD7C38858883F190110154D /* Gloss.framework in Frameworks */,
+				55AC34F4400660072DF60B9CD685D4D3 /* Log.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD45FF2A64C73D2ECD5021A9F12EEF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527C92E683EF10B7220E3FE130ACE3E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015EC1068F4761EE250C61525D81B4ED /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				5F3346D4BC9B42B3A82EFB514EA0432A /* AsyncSocket.h */,
+				486D224751D69D9213235DBAFB406973 /* AsyncSocket.m */,
+				61D335FCF52819480F1BF01DF4DA992F /* AsyncUdpSocket.h */,
+				9FE56BC863572C8A8D5F12DCE042631E /* AsyncUdpSocket.m */,
+			);
+			name = RunLoop;
+			sourceTree = "<group>";
+		};
+		1191A9AF83EE576B6E024B7D8FD11F92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFFB6C4C8C1A3530E8E047FC32C6A6E1 /* Alamofire.framework */,
+				12E79A774D42498BA700935E95726E6D /* CocoaAsyncSocket.framework */,
+				9B4D16E8745228BD3CD72CDBC4AA70BE /* Gloss.framework */,
+				7EC5C010F6963DC2CAFD214995AD9B9C /* Log.framework */,
+				F2837BFE53DE323D3C3CB639BF0D6CBD /* Pods_synesthesia.framework */,
+				C5A4C664A4187D12901E38144050D922 /* SwiftyHue.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12854B4F1946E3C90965ED48AE81128F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12A1A4C64F082C700EDB9D209355FCAA /* CocoaAsyncSocket.modulemap */,
+				6F86F04ABE4637524F75B94C342C1481 /* CocoaAsyncSocket.xcconfig */,
+				0B90130C9DFF971DB6ADBAA32F6CB867 /* CocoaAsyncSocket-dummy.m */,
+				E9981DDF82EE30DF2B84A356BD3ADC26 /* CocoaAsyncSocket-prefix.pch */,
+				D263000E41B43749580C01FB2B79E767 /* CocoaAsyncSocket-umbrella.h */,
+				0EB5B99F96707895AE8FEF5BA418118F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		1ACFF16C25FB5108CA00A89F210D50CA /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				F182D7902DB29EF8233C2D17F0E85C43 /* GCD */,
+				015EC1068F4761EE250C61525D81B4ED /* RunLoop */,
+				12854B4F1946E3C90965ED48AE81128F /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		1D6F300A468050D5657728E7FEF13398 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				587FEE0D92295B2F94E03C382F746522 /* Gloss.modulemap */,
+				33EB6FE738BC069177771E99A43077B0 /* Gloss.xcconfig */,
+				E7F6C456EA6FB6A17722E5EBC4D75274 /* Gloss-dummy.m */,
+				5AF59E36DDE913828EFCB567C71DADDA /* Gloss-prefix.pch */,
+				F471223A34FAA08B1892BA24ED1064E8 /* Gloss-umbrella.h */,
+				6A44C9E6BB99C0228BCEC42740A65C1C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gloss";
+			sourceTree = "<group>";
+		};
+		21CC95BD3727A4F353DD854727660B97 /* SwiftyHue */ = {
+			isa = PBXGroup;
+			children = (
+				9A579BE29D465FB1A78CDEF369A2F996 /* SwiftyHue.h */,
+				57C6991DC63848941EC5A9448208D581 /* Base */,
+				416EA0F6A9D06B3A9A3DC5EAC1C02EE1 /* BridgeServices */,
+				EE7290277CF56FC3EDD14B8CEB0B29C5 /* Support Files */,
+			);
+			name = SwiftyHue;
+			path = SwiftyHue;
+			sourceTree = "<group>";
+		};
+		416EA0F6A9D06B3A9A3DC5EAC1C02EE1 /* BridgeServices */ = {
+			isa = PBXGroup;
+			children = (
+				E840E9C4CB9B1BF9EF75E83AEB7BAE95 /* BridgeAuthenticator.swift */,
+				C39E88DB0729CCD832405193F0A0C9B7 /* BridgeAuthenticatorDelegate.swift */,
+				96F58CB0202B8B6CF32EB15823BD67C2 /* BridgeFinder.swift */,
+				E4FC217F9563DC7D0D7925A29DEA345A /* BridgeFinderDelegate.swift */,
+				163AFEFE31D8DDAE6C191A34A4ED22CA /* BridgeResultParser.swift */,
+				DBFF8E8C7987C890D824D03955F0B1BB /* BridgeValidator.swift */,
+				052314ED1CC18E98C135C0CE0560785F /* HueBridge.swift */,
+				082C006B759FBDAD3F397B3120B7EE0C /* HueBridgeIcon.swift */,
+				CC757F4C55E57D28379FD3FEE67C76E9 /* IPScanner.swift */,
+				6AF593378EF71210B7E7898A45EE7F22 /* NUPNPScanner.swift */,
+				20AB24985147799DEDB981261AC0D894 /* Scanner.swift */,
+				56FD8AF7DC06D9F5BE76F0486722AE10 /* ScannerDelegate.swift */,
+				4FC713F98FE96C9EFB9CD9D284AFBC33 /* SSDPScanner.swift */,
+			);
+			name = BridgeServices;
+			sourceTree = "<group>";
+		};
+		418B906845B876840E7228A845EDAEB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E5CF216657AE07168AC7EF4CA47ADE4 /* AudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		473A1E96EA770A7FA05229B1BD06F9AA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				733B8428742ED5B7F65703EFDD8334A3 /* CFNetwork.framework */,
+				248380F2A61B0A8D7D51A730BD76095D /* Foundation.framework */,
+				25846BF4249F7FD5E7895E8425D928C7 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		54F473371EC645464F8592337BFFC92A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2330DC0C67013F06D19FC7424D610F1F /* Alamofire.framework */,
+				35B0E14087B59C819CF5312503A5D737 /* CocoaAsyncSocket.framework */,
+				08851DA7B0D956319DCF9735C3FE0365 /* Gloss.framework */,
+				644A676ED7B60C0B9D11F6AA9DD0A498 /* Log.framework */,
+				473A1E96EA770A7FA05229B1BD06F9AA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5513BEB69C8BC1C2F969EAAB90031BC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				806D2EBAE6C2A44FA54DD09E2C7C841C /* Alamofire.modulemap */,
+				6D64AE570DD0064038985B067C1F580F /* Alamofire.xcconfig */,
+				3E767AEBF7F7B39803E50BFFF8AD65C5 /* Alamofire-dummy.m */,
+				6C7B3AC2821BFCF82EFEBB5152CF78FC /* Alamofire-prefix.pch */,
+				C45B7AFCC0951B8C26D697E3262A46A7 /* Alamofire-umbrella.h */,
+				A61F9FD53FA561E06E8FA0359E1F95EB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		566149EC2C539279F215B8FEC3A0A06F /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				6B480ED79B31BABF80E3F96D243CEBA4 /* AFError.swift */,
+				049A76314E7EA07C02964A0280908015 /* Alamofire.swift */,
+				A26B9E0A07779B7251B15C416684E23F /* DispatchQueue+Alamofire.swift */,
+				F2B82BA63805A2591E1816DC27DC280C /* MultipartFormData.swift */,
+				3CAEEFB06F08985DC69EB1F8FD0B022E /* NetworkReachabilityManager.swift */,
+				C91B9E0B1D0A6B60F5B3CC9A622B8C6D /* Notifications.swift */,
+				A79BC66C6299699C6337B89AB07BAE31 /* ParameterEncoding.swift */,
+				BCBCC7C7CBBA638CC258C73EF08F0399 /* Request.swift */,
+				0A76A658C09D6313EE899619A2F6CD8B /* Response.swift */,
+				06C3BE12E6921FCA8D1973ED6978039B /* ResponseSerialization.swift */,
+				F17C2AF312406FDBFA2E90E745C0453B /* Result.swift */,
+				E7D67B56FE92ABB3A664AE90148CB18F /* ServerTrustPolicy.swift */,
+				4D651999766213038DB378461E114040 /* SessionDelegate.swift */,
+				80A308FA5CB370290C6F411BA8CBEB68 /* SessionManager.swift */,
+				A2318FDEFBB17BF9E98B4174FA9FF3FE /* TaskDelegate.swift */,
+				B4E82422DC2B4AB3B032FE25048FB9EF /* Timeline.swift */,
+				16C87B854E62F4E3ABDE68ADAEC0A8CA /* Validation.swift */,
+				5513BEB69C8BC1C2F969EAAB90031BC1 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		57C6991DC63848941EC5A9448208D581 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F2670CB341E39B8784BE9B83FA0B3FD1 /* AppData.swift */,
+				9500EF2D4C5F1E8F765D89C129C7E987 /* Backup.swift */,
+				3C16A4D92EF79A0A313F9B431E672A36 /* BridgeAccessConfig.swift */,
+				A82666D0D6908A4217BB8A45BA08AB2C /* BridgeConfiguration.swift */,
+				8419AF84813B2C9A7FFA65B07A4CB412 /* BridgeResource.swift */,
+				23096E489E0C14D740B9ABA23D133401 /* BridgeResourcesCache.swift */,
+				41FD9F872B4104935EB95B05B5AD14BC /* BridgeSendAPI.swift */,
+				1B85CCD8DA580B3DC40F41834AA5E4B9 /* DaylightSensor.swift */,
+				57828DE25D562FA058021A0B578A7FF2 /* DaylightSensorConfig.swift */,
+				AE8625D040EB9BEF60F505FDA617767A /* DaylightSensorState.swift */,
+				1E98A3C406399289C8721D9D1BE25224 /* Dictionary+Extension.swift */,
+				77EC418C95FA4EF6A465E34641CE1BE7 /* Error.swift */,
+				C0E406A1CDA3F11672CDA2FA57528E5D /* GenericFlagSensor.swift */,
+				68CD84E80BB45CEC6D199A20FE30B8A9 /* GenericFlagSensorConfig.swift */,
+				1FA9D066FEBEF5D6404A60FA40B06935 /* GenericFlagSensorState.swift */,
+				AAB0F948E379AD9370F5983C674A52E6 /* GenericStatusSensor.swift */,
+				3386E36C59FFB7890A2AE9C765BF2F29 /* GenericStatusSensorConfig.swift */,
+				540186D58372F4DF0368B265FB77C3F4 /* GenericStatusSensorState.swift */,
+				3605FADE45ACFC2C2921E501E6D200B6 /* Group.swift */,
+				2483C520878B91216AC36DDBC38FEEBD /* HeartbeatManager.swift */,
+				7D95DE969620BD08BCB1C3A198441D0D /* HumiditySensor.swift */,
+				7F16198937BBEB9B950E951A68931307 /* HumiditySensorConfig.swift */,
+				1B1BECE5F62683442C94A0F06E46A310 /* HumiditySensorState.swift */,
+				716BAFB7C142EF53B14C1A02C49F635F /* Light.swift */,
+				6888E61C491E3A048036FFB8822EA189 /* LightState.swift */,
+				A8711FA3BE4F798DE6A0079F09B3C69C /* LoggerConfig.swift */,
+				A2FC16908CF5C5C702AEB08A990ABFD5 /* NSDateFormatter+Extension.swift */,
+				781FC173E6216A61FDBFF3560FC2915E /* OpenCloseSensor.swift */,
+				B26D261B1A4616C8C509C5A47F1A108C /* OpenCloseSensorConfig.swift */,
+				EE63A5A45FE301807C267AB69984FDD2 /* OpenCloseSensorState.swift */,
+				392CCA71D10CD2179A781705230E9129 /* PortalState.swift */,
+				6A7A4782C9972949C92DD70F7606A03C /* PresenceSensor.swift */,
+				C1A97526E6A72E0C23A762942FD4E4C7 /* PresenceSensorConfig.swift */,
+				1B858280235CF0060E6A00EEE798059B /* PresenceSensorState.swift */,
+				DDBE120E93D8493ECFFBDE36989CB3AD /* ReplaceMe.swift */,
+				99A2510CCB65A6CC36342417EE5C834B /* ResourceCacheHeartbeatProcessor.swift */,
+				11E502A8A9DF7BD24E05B2AFDDECA44A /* Rule.swift */,
+				D0BEDA4059394D2B74BF57F3982480E7 /* RuleAction.swift */,
+				D0E4D813A36F75171AE4B7C84257752A /* RuleCondition.swift */,
+				DAF04EDA404C709402E4AF2002625CBD /* Scene.swift */,
+				3F69914E35DA07F905703C6E87CFFA3A /* Schedule.swift */,
+				96287B688C083253939576857B8F6F7A /* ScheduleCommand.swift */,
+				6413DBC7410BBC3AEA26303386612678 /* Sensor.swift */,
+				127BB6A90314AFF9F4157C04A70E9A5D /* SensorConfig.swift */,
+				F071E5083E1BC68002553194BF79B80C /* SensorState.swift */,
+				D67F366B2B723063601B6548AC093704 /* SoftwareUpdateStatus.swift */,
+				B806FA05363C14E2779C1E6FC297A7ED /* SoftwareUpdateStatusDeviceTypes.swift */,
+				E87A976EB0F5CA743D948B2F58B937B0 /* SwiftyHue.swift */,
+				46F000CBE79774E9501D9167508704BB /* SwitchSensor.swift */,
+				37860417BBEA3721D43B4522ED0EDDC8 /* SwitchSensorConfig.swift */,
+				CD612F25F8F483F6393491FB21ADAC14 /* SwitchSensorState.swift */,
+				49DD0A1455E0FCE17482A2B31266F6B3 /* TemperatureSensor.swift */,
+				F028AB06E543287DFD59AD78133327F0 /* TemperatureSensorConfig.swift */,
+				DF5A1F3690E2103922973E41DA38593B /* TemperatureSensorState.swift */,
+				F113C38413457AE1B09FED8A134449E2 /* TestRequester.swift */,
+				8D219B8D28166BBB317C6736362C1E2A /* Utilities.swift */,
+				F2F4894AA20ECEA6C48CD0121DFD1B40 /* WhitelistEntry.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		638B7F11C560B962A74728F25567BFBC /* Pods-synesthesia */ = {
+			isa = PBXGroup;
+			children = (
+				0491D316E76E75C22B14C986CE4E1F6C /* Info.plist */,
+				91EB497E5A7634DA69210790627B891B /* Pods-synesthesia.modulemap */,
+				9EB90A911BEDBB5FFB4ADD1E44229B36 /* Pods-synesthesia-acknowledgements.markdown */,
+				DAB6F65598E311EE765F993AE95FA2EC /* Pods-synesthesia-acknowledgements.plist */,
+				85F6B26CD3ED09A2864B2123F78B619A /* Pods-synesthesia-dummy.m */,
+				6F0F5B3CCDD0255D6DACCDF2CBA1EF1C /* Pods-synesthesia-frameworks.sh */,
+				1610A9BFA82A05BBE6C3F829A6D7E8BA /* Pods-synesthesia-resources.sh */,
+				8AD96D52885A3136D7CEB2245C1EBE58 /* Pods-synesthesia-umbrella.h */,
+				944C72479327FEC774DD65C19DD7934F /* Pods-synesthesia.debug.xcconfig */,
+				CF2EA8E435E6657C1CDFF0EED3CF0A77 /* Pods-synesthesia.release.xcconfig */,
+			);
+			name = "Pods-synesthesia";
+			path = "Target Support Files/Pods-synesthesia";
+			sourceTree = "<group>";
+		};
+		68201BC37E6F0E2E3C9F0C2B58E9919F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				638B7F11C560B962A74728F25567BFBC /* Pods-synesthesia */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				54F473371EC645464F8592337BFFC92A /* Frameworks */,
+				DC10A2D3A42B23F3D339A07F5B557102 /* Pods */,
+				1191A9AF83EE576B6E024B7D8FD11F92 /* Products */,
+				68201BC37E6F0E2E3C9F0C2B58E9919F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B62A5C34F4C396A841059250AD76CFAA /* Gloss */ = {
+			isa = PBXGroup;
+			children = (
+				321F1FAD3CC87F0ACF72342DF1036617 /* Decoder.swift */,
+				80D72AC94D0126717422E6C7DFBE4702 /* Encoder.swift */,
+				24CA80BA8DE4E7907C63F75DE6938E74 /* ExtensionArray.swift */,
+				64579F27EB3CDC4508736FDE56FF51DD /* ExtensionDictionary.swift */,
+				48417D00DA1E2734593E623F5C84E4AE /* Gloss.swift */,
+				B576FA825F53D1DEAC63EA544D029112 /* Operators.swift */,
+				1D6F300A468050D5657728E7FEF13398 /* Support Files */,
+			);
+			name = Gloss;
+			path = Gloss;
+			sourceTree = "<group>";
+		};
+		D679B3032E45DB4146BB30DF37CB2742 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EF64E4280A377EE2509886815864ACB /* Info.plist */,
+				EB660F3D935AEC24C935986AAABEB555 /* Log.modulemap */,
+				C293F79D5D96A263A2D6CAC841BF234A /* Log.xcconfig */,
+				FF8A586F68BBF200AC5D3D782470F84D /* Log-dummy.m */,
+				8D0E172F2071FD77A3A1932891B906F2 /* Log-prefix.pch */,
+				B4F999BA4723106F3F48A1C38344A3DA /* Log-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Log";
+			sourceTree = "<group>";
+		};
+		DC10A2D3A42B23F3D339A07F5B557102 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				566149EC2C539279F215B8FEC3A0A06F /* Alamofire */,
+				EEE2631C27283014A3270C95D4895FAE /* AudioKit */,
+				1ACFF16C25FB5108CA00A89F210D50CA /* CocoaAsyncSocket */,
+				B62A5C34F4C396A841059250AD76CFAA /* Gloss */,
+				F07AF28B6D37145557BFBD515055C423 /* Log */,
+				21CC95BD3727A4F353DD854727660B97 /* SwiftyHue */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE7290277CF56FC3EDD14B8CEB0B29C5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				553C1AC4BD3C7FA09609B09194C2AC93 /* Info.plist */,
+				76A6D872A0B765BA16B4CBE0B9764E81 /* SwiftyHue.modulemap */,
+				D9078482285855A70D58B40FCDBB6C12 /* SwiftyHue.xcconfig */,
+				1F65A6953DA50998B06C12E5D7A70959 /* SwiftyHue-dummy.m */,
+				8AFBF36D5B403C5556803A663B66C88D /* SwiftyHue-prefix.pch */,
+				1C29B3A76A3B7139F723E752CD5D6ABD /* SwiftyHue-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyHue";
+			sourceTree = "<group>";
+		};
+		EEE2631C27283014A3270C95D4895FAE /* AudioKit */ = {
+			isa = PBXGroup;
+			children = (
+				C1C2FD2CDDEC90E5E84396F701C58EE5 /* AKAmplitudeEnvelopeAudioUnit.h */,
+				5E325485D9E10199061720CE489B0001 /* AKAmplitudeTrackerAudioUnit.h */,
+				2F1310EF0BB7E639CCF8F721A31BDF3E /* AKAudioUnit.h */,
+				CCC106F02F2BABADEA8E5095ABE01AC0 /* AKAutoWahAudioUnit.h */,
+				13ACB190E5B2A30B5A5C2F97FAC7A7F5 /* AKBalancerAudioUnit.h */,
+				8C3ECF29420694F5FD1991CFEFF7DBF6 /* AKBandPassButterworthFilterAudioUnit.h */,
+				F7E199FD062A130B8997D2EC3AA20C0B /* AKBandRejectButterworthFilterAudioUnit.h */,
+				3EB98B70AD5E4C134AC7B7875F16DF26 /* AKBitCrusherAudioUnit.h */,
+				6143D42AD89DB1ED052E3BED6A80E19C /* AKBoosterAudioUnit.h */,
+				1264B0116FB655ABEA315A98A7F280FC /* AKChowningReverbAudioUnit.h */,
+				7E466CA6F5F108FBE4FDAD29885DC00C /* AKClarinetAudioUnit.h */,
+				674745E3B68128BD9703C526AC46FE5D /* AKClipperAudioUnit.h */,
+				19A9DB48164BE76E4D6CD95CFC385AB9 /* AKCombFilterReverbAudioUnit.h */,
+				6C2893E558A357A731B80CC91CE1D237 /* AKConvolutionAudioUnit.h */,
+				55C2714FD9967C9E20AD18A9A775DD90 /* AKCostelloReverbAudioUnit.h */,
+				FD83C8DFD8F98C3AB4FFAB27CB5B45A4 /* AKDCBlockAudioUnit.h */,
+				B840A8A145861B8FD11F0DE950C927A8 /* AKDripAudioUnit.h */,
+				94C5948ADAB964182ED8D5378023764F /* AKEqualizerFilterAudioUnit.h */,
+				436D113FD405D00230C10DCDA8BA1AED /* AKFlatFrequencyResponseReverbAudioUnit.h */,
+				10A1EBFC0A4259C89BD923778DF82989 /* AKFluteAudioUnit.h */,
+				5B142D60B713E31FB9EF7B46E9669C76 /* AKFMOscillatorAudioUnit.h */,
+				92B37AAF27797270FE72EC84093ED47A /* AKFMOscillatorBankAudioUnit.h */,
+				C31E9B4753659C238415F132C8478B95 /* AKFormantFilterAudioUnit.h */,
+				B02639CF60B95D035DDADA2BC8463AF0 /* AKFrequencyTrackerAudioUnit.h */,
+				A231C0125EF8A3177FDAEA8DD46C96D1 /* AKHighPassButterworthFilterAudioUnit.h */,
+				56DCB4BE9D516929D6B199F39AD5E34A /* AKHighShelfParametricEqualizerFilterAudioUnit.h */,
+				0D40B47B7DD29BDD41C026937B26B8EC /* AKKorgLowPassFilterAudioUnit.h */,
+				0A32EDDEB6608A762C780CAD46261368 /* AKLowPassButterworthFilterAudioUnit.h */,
+				08A0F503A3959A788F900D2DF5EF4E4D /* AKLowShelfParametricEqualizerFilterAudioUnit.h */,
+				87CD3AA41C8FDA626A132B606D7DE0EF /* AKMandolinAudioUnit.h */,
+				2D1A60656FFE4CE76C21AF2992E98BD8 /* AKMetalBarAudioUnit.h */,
+				7E3E7EA9878307EF0ADD0A0CDC3C0072 /* AKModalResonanceFilterAudioUnit.h */,
+				08E2641EEE9C6BE3E3FB968D8380C044 /* AKMoogLadderAudioUnit.h */,
+				047A5670EAC4391DDB887C8B642AA40B /* AKMorphingOscillatorAudioUnit.h */,
+				CFA16280C258F9A1019B14C1B54C3C40 /* AKMorphingOscillatorBankAudioUnit.h */,
+				1B7F910A18D8F3001AC3F45B31EB4A5C /* AKOfflineRenderer.h */,
+				C3235015B1D4211B8E4DC9D81657C841 /* AKOperationEffectAudioUnit.h */,
+				E5C84B65E9F5444866A0F4B3B113E23F /* AKOperationGeneratorAudioUnit.h */,
+				A9C78EE23C809FF99E673125CB47C3B6 /* AKOscillatorAudioUnit.h */,
+				3C9B6D75D13FE26A1DFE36AD015A8920 /* AKOscillatorBankAudioUnit.h */,
+				7CD1C8E9B1BD0B8F916DB246F16DD361 /* AKPannerAudioUnit.h */,
+				809FE26C804369FDF99D081AB7F58B7C /* AKPeakingParametricEqualizerFilterAudioUnit.h */,
+				90169A046A920C39F924A05658B5F521 /* AKPhaseDistortionOscillatorAudioUnit.h */,
+				6AA37BBBB2E26AD79AE9AD5D248B3234 /* AKPhaseDistortionOscillatorBankAudioUnit.h */,
+				8CAB4D5E54895C0A7F9A74B104A46524 /* AKPhaseLockedVocoderAudioUnit.h */,
+				F82A3480A6A4EE7D9C3BCFD6B39F0C47 /* AKPinkNoiseAudioUnit.h */,
+				42DB2AEB1D4E20CD568B83FD431002DE /* AKPitchShifterAudioUnit.h */,
+				B5DB0B92BBBCB8442B1E50075EE2DF0D /* AKPluckedStringAudioUnit.h */,
+				CD8C0ABFD87D382159998E74205FDF83 /* AKPWMOscillatorAudioUnit.h */,
+				B052358F941A59BDF2EA039ECA2C78A3 /* AKPWMOscillatorBankAudioUnit.h */,
+				2DD35353F4A32A3A645D1301A42181CB /* AKResonantFilterAudioUnit.h */,
+				498B544275058D2309C225CD385A281C /* AKRolandTB303FilterAudioUnit.h */,
+				E26256CD0452808D0FA18CFF641B736D /* AKStereoFieldLimiterAudioUnit.h */,
+				AC5F1C478DF3266098089D49C2D914F2 /* AKStringResonatorAudioUnit.h */,
+				8EF40109D0BD84CAD42BF0621776D340 /* AKTanhDistortionAudioUnit.h */,
+				019AECE5F0DF24757631A3A9E8CE3150 /* AKTesterAudioUnit.h */,
+				14618EF6FB4955760E40018343B97F29 /* AKThreePoleLowpassFilterAudioUnit.h */,
+				FCFD7E1E33E9C664404C5A103F57B929 /* AKToneComplementFilterAudioUnit.h */,
+				D013F65A72A71B7AEF4C958261379F5F /* AKToneFilterAudioUnit.h */,
+				1E9258B0B2D0CEE7027DF56A283F64F9 /* AKTremoloAudioUnit.h */,
+				FFCCE3E0AE8BCADE73174C29D643745A /* AKVariableDelayAudioUnit.h */,
+				7FF576BFC4043D5EB0F4CE5AF4AEEDA5 /* AKWhiteNoiseAudioUnit.h */,
+				68401D2E929B4B0892750B9B047ABC2C /* AudioKit.h */,
+				DF030DBD56EB36F3A825C596CA5D4923 /* AudioKit-Swift.h */,
+				08EB6214E547C25421CCCDC1A649BAC9 /* EZAudio.h */,
+				FE215BB80C0DC771E1D7E70A84CD8658 /* EZAudioDevice.h */,
+				8292C2D505061EFBA344B2050DD898D2 /* EZAudioDisplayLink.h */,
+				B7B15FACDF5D01554DB1662D4908A71E /* EZAudioFFT.h */,
+				DA4A263123E823768EFAB5C211174E0C /* EZAudioFile.h */,
+				C71BCD16C292F02035251DA991B9F769 /* EZAudioFloatConverter.h */,
+				CBEB9CFFDE29E19DAF51447D54495FBC /* EZAudioFloatData.h */,
+				624C2F13B8C02C869548241C63100ECA /* EZAudioPlayer.h */,
+				EB8B59A66AEFA559F827F2D5F0D51145 /* EZAudioPlot.h */,
+				0983338B9E04CBD1DB75FFD06B9E7F10 /* EZAudioPlotGL.h */,
+				F46B17AF342E789650B32584EAAB713F /* EZAudioUtilities.h */,
+				6D3D269A7C2A971FFC88D4935C9B9BE6 /* EZMicrophone.h */,
+				0667926CB23D83C46C78B17D2BAB8C0A /* EZOutput.h */,
+				91D1F462C852CA85F97B13AC2CF9CB4C /* EZPlot.h */,
+				180D4FC548EE63F7E4245249CD3F009D /* EZRecorder.h */,
+				2479A0C1D86083AA9A500397B4A7994F /* TPCircularBuffer.h */,
+				418B906845B876840E7228A845EDAEB2 /* Frameworks */,
+			);
+			name = AudioKit;
+			path = AudioKit;
+			sourceTree = "<group>";
+		};
+		F07AF28B6D37145557BFBD515055C423 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0708C8946BBA23F2CB7A80CAE4B0BEEE /* Benchmarker.swift */,
+				B4337BFA6CB9656066B426FBE28821EE /* Formatter.swift */,
+				74BCA0F22732565ED228459B5DF21AC8 /* Formatters.swift */,
+				CC60DD406C9E5FC76CA0EDB6CBC6F924 /* Logger.swift */,
+				862C55D0C084563E0728715E57288296 /* Theme.swift */,
+				31204DACDC93A335CE4B7CD0B0999E4D /* Themes.swift */,
+				6EC57F514C906BDB1B3F821C8EB11994 /* Utilities.swift */,
+				D679B3032E45DB4146BB30DF37CB2742 /* Support Files */,
+			);
+			name = Log;
+			path = Log;
+			sourceTree = "<group>";
+		};
+		F182D7902DB29EF8233C2D17F0E85C43 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				35971CEB629F89BCF2B164D64C580EA3 /* GCDAsyncSocket.h */,
+				FBD76C53441FB54042B89E90D423AE07 /* GCDAsyncSocket.m */,
+				569C8067C22BC4F71E894FD0E19552BA /* GCDAsyncUdpSocket.h */,
+				A19988932217A59BFDCDB5A90F413302 /* GCDAsyncUdpSocket.m */,
+			);
+			name = GCD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2CC50035A2AF1CDBD5601BBC3A2AE45D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D416CC9D014759848DB89D15D4DD6FA3 /* AsyncSocket.h in Headers */,
+				30C488B83E64A5C42DA44B280B94D293 /* AsyncUdpSocket.h in Headers */,
+				F0E57361E4F341FF77F5CEBF69891292 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				0C11011B58F53FC0448CB65E4BD72B37 /* GCDAsyncSocket.h in Headers */,
+				1DE19DE96390C69F6606153506FD205C /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96060652D1C569EAB9ECD71C133FE3ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C71D24ECB558E3000AB234197EB2C41 /* Gloss-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC0951CE16E08AE9980A414B1FFC6CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC10A4D4443F82AD21A0C8510CCDA47 /* SwiftyHue-umbrella.h in Headers */,
+				910F20B51D29CE371FE8B619E7AABA67 /* SwiftyHue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3EEF1F34E36B617FF8C21A4E45DDBBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FD2E8A01716C040A8B827CDB4E54E1 /* Pods-synesthesia-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78A6F11A0DBC001EB5C82144F1F11A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA5AC5FE9F72D8709AF5A29284758717 /* Log-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26ADDC28456868EFC4ABF40BE8AD1321 /* SwiftyHue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0839CA0B99E24E6957CAA5D3DE8E32 /* Build configuration list for PBXNativeTarget "SwiftyHue" */;
+			buildPhases = (
+				659A4A77568C7EB5EF1865724C1D3552 /* Sources */,
+				96FC2AE0ADFDE2AC593BFF287405842E /* Frameworks */,
+				9CC0951CE16E08AE9980A414B1FFC6CA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E33AB8D6A247CC134C168A19DF1573 /* PBXTargetDependency */,
+				41B8D41DB00FEE700420C6ACB2E6C845 /* PBXTargetDependency */,
+				08C1EB296EDDD66950548818C3ECD473 /* PBXTargetDependency */,
+				36386B2D22376C4C96520B645D71767A /* PBXTargetDependency */,
+			);
+			name = SwiftyHue;
+			productName = SwiftyHue;
+			productReference = C5A4C664A4187D12901E38144050D922 /* SwiftyHue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36BDBFF9AA4B788FEC5F33AC618AC4DC /* Log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14612F4AB40E6B7CA746759E05040CDC /* Build configuration list for PBXNativeTarget "Log" */;
+			buildPhases = (
+				D66A91B8447C95309C6AA4C60D6EEB87 /* Sources */,
+				4C8449D452EA74935BDFE8E43767849F /* Frameworks */,
+				F78A6F11A0DBC001EB5C82144F1F11A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Log;
+			productName = Log;
+			productReference = 7EC5C010F6963DC2CAFD214995AD9B9C /* Log.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99F558792CFEB8051CE3610E79DA4CB /* Build configuration list for PBXNativeTarget "Gloss" */;
+			buildPhases = (
+				7CB34417E8829C4BAA9341FCCFAD446E /* Sources */,
+				9CD45FF2A64C73D2ECD5021A9F12EEF0 /* Frameworks */,
+				96060652D1C569EAB9ECD71C133FE3ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gloss;
+			productName = Gloss;
+			productReference = 9B4D16E8745228BD3CD72CDBC4AA70BE /* Gloss.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40751EA11DAC76A50CC6779479D6408F /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0403E1595573C7AB6E85945692B8CDBE /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				2BB4C51DE6F7F08826A03AB32CAB69EA /* Sources */,
+				749F5DFA98EF709905FD5946B45ACC1E /* Frameworks */,
+				2CC50035A2AF1CDBD5601BBC3A2AE45D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 12E79A774D42498BA700935E95726E6D /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		516FE5701803691BA2A2F4D948B7CBC9 /* Pods-synesthesia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D6B04AC06F1C9817F802A772FB1061 /* Build configuration list for PBXNativeTarget "Pods-synesthesia" */;
+			buildPhases = (
+				1D3868AC2B8D8ECB4CE3D3664A9B6913 /* Sources */,
+				404A54AD2802BA4294FDFB6EF846D99B /* Frameworks */,
+				F3EEF1F34E36B617FF8C21A4E45DDBBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2774C04D0B952D0F4CC4329A6CE1575 /* PBXTargetDependency */,
+				8E362E06BCB2008D7A3A4A57980345F9 /* PBXTargetDependency */,
+				4588E2BE0853CFDE6FD8AC06E27DAB11 /* PBXTargetDependency */,
+				520108759DACC29A9BE6015FC18ADAA6 /* PBXTargetDependency */,
+				657064FF56ADCCC05DF812CA2CBE3E50 /* PBXTargetDependency */,
+			);
+			name = "Pods-synesthesia";
+			productName = "Pods-synesthesia";
+			productReference = F2837BFE53DE323D3C3CB639BF0D6CBD /* Pods_synesthesia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = CFFB6C4C8C1A3530E8E047FC32C6A6E1 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1191A9AF83EE576B6E024B7D8FD11F92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				40751EA11DAC76A50CC6779479D6408F /* CocoaAsyncSocket */,
+				39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */,
+				36BDBFF9AA4B788FEC5F33AC618AC4DC /* Log */,
+				516FE5701803691BA2A2F4D948B7CBC9 /* Pods-synesthesia */,
+				26ADDC28456868EFC4ABF40BE8AD1321 /* SwiftyHue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D3868AC2B8D8ECB4CE3D3664A9B6913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EECF90FDB69EA01EFE800C5BC2A86EB /* Pods-synesthesia-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BB4C51DE6F7F08826A03AB32CAB69EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8C620F3A6902B7D7ACE9ADBE1169C0 /* AsyncSocket.m in Sources */,
+				F263CD99F16F4924E2CAB4A817A6AC6A /* AsyncUdpSocket.m in Sources */,
+				FC06F196A47F2657455AA209102EBEF8 /* CocoaAsyncSocket-dummy.m in Sources */,
+				2C396D4A09547722251D602CBC47E291 /* GCDAsyncSocket.m in Sources */,
+				5894C32B5FE5DD2778F15303962DC923 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		659A4A77568C7EB5EF1865724C1D3552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EDB339B1B052ABC108E7CE073730AC /* AppData.swift in Sources */,
+				BD878AE47D3F49FC86A470A9D9AD7BC6 /* Backup.swift in Sources */,
+				FE93D9700A4D23A730AB498C9677D950 /* BridgeAccessConfig.swift in Sources */,
+				5815CEE7344BAF05B0006BF1DBA709E2 /* BridgeAuthenticator.swift in Sources */,
+				A423422379F8F13607FABEBEE83D6D10 /* BridgeAuthenticatorDelegate.swift in Sources */,
+				D8B0F59DD06BDC4D058D38D3D90A3578 /* BridgeConfiguration.swift in Sources */,
+				3206774B1D2212D7431F728A0B752018 /* BridgeFinder.swift in Sources */,
+				FA3799B61F6F27DEB9CA3A98AAFF7523 /* BridgeFinderDelegate.swift in Sources */,
+				E445107EFDAD525758D9D9C7FCB4329F /* BridgeResource.swift in Sources */,
+				6F5E9884E59F853C549D7D04DE9B7768 /* BridgeResourcesCache.swift in Sources */,
+				9C6BDE63F375250A13D85C963DEC1D49 /* BridgeResultParser.swift in Sources */,
+				505370FA89DA4CD8839E1FC6C5F37C9B /* BridgeSendAPI.swift in Sources */,
+				DC92EF306D20379603F3647ABF682533 /* BridgeValidator.swift in Sources */,
+				3F6B4D0875172F89FDC69F41ED90707C /* DaylightSensor.swift in Sources */,
+				B0D40829D97E5041C0A83D77624B214D /* DaylightSensorConfig.swift in Sources */,
+				393CB1FE9BBBA227E539B1D9111E9C37 /* DaylightSensorState.swift in Sources */,
+				5F2D16D3A332907DB7B85E6858F0AA1C /* Dictionary+Extension.swift in Sources */,
+				E7E3C23509E0ABC5FB2944E99B71FE26 /* Error.swift in Sources */,
+				CA0CB24027E64090A6C2B6F179453E2E /* GenericFlagSensor.swift in Sources */,
+				DE2BF825D7B7FADB907198AB5BCA3456 /* GenericFlagSensorConfig.swift in Sources */,
+				6225FAAF7706AD00C2FF03B7AC9F30EB /* GenericFlagSensorState.swift in Sources */,
+				C4F4D78B37CCD1E2DA82ABA60906175F /* GenericStatusSensor.swift in Sources */,
+				A8645037AEFBBCEBB78670F49FB97ABA /* GenericStatusSensorConfig.swift in Sources */,
+				D0222C90DA2EAB3BB12D999B11EE9783 /* GenericStatusSensorState.swift in Sources */,
+				4B5F8E304D990C5672DEB266032384D8 /* Group.swift in Sources */,
+				F0B3F35E6ADCB2A5CA81D3698670731B /* HeartbeatManager.swift in Sources */,
+				69AD90EE5FF1D7D9253656880FC74655 /* HueBridge.swift in Sources */,
+				B55D94DF3870422633D8A8E8DD8234DC /* HueBridgeIcon.swift in Sources */,
+				D202E7A14CF8E8402FB48A551D926E4A /* HumiditySensor.swift in Sources */,
+				8049CE94CDEBB5A91D9DC77ACD2034C2 /* HumiditySensorConfig.swift in Sources */,
+				60C0F86F1F314B183B5E8D419E410393 /* HumiditySensorState.swift in Sources */,
+				2994531D1F984A84E237D82AB3C8E0D5 /* IPScanner.swift in Sources */,
+				93A09D128EDD468E764C7728AA5A71F7 /* Light.swift in Sources */,
+				E2901091F098107EB7D8DE2CBFFE88CD /* LightState.swift in Sources */,
+				274C57112119667C4DE5AF38687FFDFD /* LoggerConfig.swift in Sources */,
+				8402B3ABA919499584C6B8E21B9BD8A5 /* NSDateFormatter+Extension.swift in Sources */,
+				02B49935CFC484C532E5BD7BC9E58378 /* NUPNPScanner.swift in Sources */,
+				7EBCC3E5D93A6DBB578F61DFDBB5344E /* OpenCloseSensor.swift in Sources */,
+				FC65B49EB7E124807B8C94A2328747A9 /* OpenCloseSensorConfig.swift in Sources */,
+				2A0CB705DE04B13429BB06D81A21ED81 /* OpenCloseSensorState.swift in Sources */,
+				BA63F9B1989A88F13FFB45E386C2E190 /* PortalState.swift in Sources */,
+				DBB6B310F4078CBBD687153968FC971E /* PresenceSensor.swift in Sources */,
+				2D29BF9B172EE05B1D93584F8C6B4B89 /* PresenceSensorConfig.swift in Sources */,
+				F9961B37D6B87919BC0AF3B0BF469C07 /* PresenceSensorState.swift in Sources */,
+				23CF8E2BDD0511547A492FAEDD8CC5CF /* ReplaceMe.swift in Sources */,
+				B666AC6A2DBA61EF37BE522E73AB831C /* ResourceCacheHeartbeatProcessor.swift in Sources */,
+				5920201749B17FFD2D945A38337DBB54 /* Rule.swift in Sources */,
+				BD30CA66ED326743A031085757944A67 /* RuleAction.swift in Sources */,
+				348335E2F21583E0AAD104F7D700385D /* RuleCondition.swift in Sources */,
+				E7C269120652D24E500E217B35F9FDD3 /* Scanner.swift in Sources */,
+				CF8A64C6F404D3354B944A80F8F5F461 /* ScannerDelegate.swift in Sources */,
+				B5E2D49A89975CAB59275F4D72E3856D /* Scene.swift in Sources */,
+				3D985887D193536959DDD4165B1188E5 /* Schedule.swift in Sources */,
+				EF4253BF11904F813FF4AA77315D4608 /* ScheduleCommand.swift in Sources */,
+				B4EFAD5873739EEE53426FFA3FBE95C5 /* Sensor.swift in Sources */,
+				29A20FD36372DE0AA931CD1B4910A78E /* SensorConfig.swift in Sources */,
+				5B2A4B4E789E719CC5B15DD44308EDD5 /* SensorState.swift in Sources */,
+				A24CE480465C33B180D4CFBD99EA457B /* SoftwareUpdateStatus.swift in Sources */,
+				5952B201148D0EB070254A896346B7DD /* SoftwareUpdateStatusDeviceTypes.swift in Sources */,
+				D49CA86ECF5549D76A7ED37F83E5CD65 /* SSDPScanner.swift in Sources */,
+				0F99B76B0464D7FF2DA32CB2382D176E /* SwiftyHue-dummy.m in Sources */,
+				46990A7B96600D585048B787C45C6B61 /* SwiftyHue.swift in Sources */,
+				F91E7A2D1344DE8F972E79C93B61DC7E /* SwitchSensor.swift in Sources */,
+				3F49E6CB1B1EBB6E39BA0A2DB07D67A3 /* SwitchSensorConfig.swift in Sources */,
+				412B1F1E7F1CC5B9F0BDFB1EA817980D /* SwitchSensorState.swift in Sources */,
+				E574A9365A79BD121A7EA31C77DBC87B /* TemperatureSensor.swift in Sources */,
+				7FA8484B5BFD27B8F5F3E8C55A0BE9E1 /* TemperatureSensorConfig.swift in Sources */,
+				DD5E2B2C552BAEDE46DF4C4D03F5A9D4 /* TemperatureSensorState.swift in Sources */,
+				5624DF7D34E3F1D966426C668A6DB529 /* TestRequester.swift in Sources */,
+				9C230949B870619240828F9D9B50A599 /* Utilities.swift in Sources */,
+				C5552E5F4465B85AC0C74721699B2049 /* WhitelistEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB34417E8829C4BAA9341FCCFAD446E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1247BDD2195F9EA1EA71B8583C5BDED /* Decoder.swift in Sources */,
+				0B7F9732663EF1180CB1655585E2FC85 /* Encoder.swift in Sources */,
+				E6679E50B1801DB62D44D7E55D6379FD /* ExtensionArray.swift in Sources */,
+				C292E1DF1D7600ECFA5644E27411AD9F /* ExtensionDictionary.swift in Sources */,
+				F74861D230E8EA85A5FEED680D155C22 /* Gloss-dummy.m in Sources */,
+				7D90599C473273BE8106A09239978406 /* Gloss.swift in Sources */,
+				3145CF29D7BDDB9415B3288BF74BEABE /* Operators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D66A91B8447C95309C6AA4C60D6EEB87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B93C3406B20045F314DA985EE6FB023 /* Benchmarker.swift in Sources */,
+				76A35714431A1EB612DF919BF902CD7C /* Formatter.swift in Sources */,
+				2AA2358951B341D1298F7699A556D1AC /* Formatters.swift in Sources */,
+				270C791A8BB7E656E1C11420115AF4B8 /* Log-dummy.m in Sources */,
+				7935EECBDFDD5E46FF20F9BA20D1425A /* Logger.swift in Sources */,
+				8FE6F77C0BC102DBE6F8EA6135465FF7 /* Theme.swift in Sources */,
+				909058C0B0299CB36F642DEA45F2A2C4 /* Themes.swift in Sources */,
+				03E99FAF135ACEE4247287C45BD84187 /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E33AB8D6A247CC134C168A19DF1573 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 1776D05ECF250A2635A83DFEA2ABAA67 /* PBXContainerItemProxy */;
+		};
+		08C1EB296EDDD66950548818C3ECD473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = 39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */;
+			targetProxy = 4A5973245D71475F1C112FA99E6EE55B /* PBXContainerItemProxy */;
+		};
+		36386B2D22376C4C96520B645D71767A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Log;
+			target = 36BDBFF9AA4B788FEC5F33AC618AC4DC /* Log */;
+			targetProxy = 9AF9795EE4090EED86F1A9CB0C004458 /* PBXContainerItemProxy */;
+		};
+		41B8D41DB00FEE700420C6ACB2E6C845 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 40751EA11DAC76A50CC6779479D6408F /* CocoaAsyncSocket */;
+			targetProxy = E9F2C8700CF4067BB06C996939B4DBD7 /* PBXContainerItemProxy */;
+		};
+		4588E2BE0853CFDE6FD8AC06E27DAB11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = 39C69D9B6A709F788E7F5A5E2BDCF612 /* Gloss */;
+			targetProxy = 1AA1564C59C493D61155EDEA18CD9721 /* PBXContainerItemProxy */;
+		};
+		520108759DACC29A9BE6015FC18ADAA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Log;
+			target = 36BDBFF9AA4B788FEC5F33AC618AC4DC /* Log */;
+			targetProxy = 7DE9C33A75AE4FD7B6DD2E185BC94D23 /* PBXContainerItemProxy */;
+		};
+		657064FF56ADCCC05DF812CA2CBE3E50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyHue;
+			target = 26ADDC28456868EFC4ABF40BE8AD1321 /* SwiftyHue */;
+			targetProxy = D09B99F11EBE52277E5C05EC31BB03D8 /* PBXContainerItemProxy */;
+		};
+		8E362E06BCB2008D7A3A4A57980345F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 40751EA11DAC76A50CC6779479D6408F /* CocoaAsyncSocket */;
+			targetProxy = 69C2F133E1B73031BF8BC79BCB5F6826 /* PBXContainerItemProxy */;
+		};
+		E2774C04D0B952D0F4CC4329A6CE1575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = EB7140973235FE0EE975067C8EA26673 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		60AF55DC03D094FAC830C290ED60ABEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C293F79D5D96A263A2D6CAC841BF234A /* Log.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Log/Log-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Log/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Log/Log.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Log;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		621A10F5C0A994B466277661C1B2C19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D64AE570DD0064038985B067C1F580F /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65EFFE430F01352B685473832905C497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C293F79D5D96A263A2D6CAC841BF234A /* Log.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Log/Log-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Log/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Log/Log.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Log;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AED05C60994A7B4E2AA34C2281CDD11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944C72479327FEC774DD65C19DD7934F /* Pods-synesthesia.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-synesthesia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-synesthesia/Pods-synesthesia.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_synesthesia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C48CCCB862EC56A4174F6E1715688C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D64AE570DD0064038985B067C1F580F /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9302130DB76983880CD5847320790D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EB6FE738BC069177771E99A43077B0 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99359DD368BB6756AAAE391C83962860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EB6FE738BC069177771E99A43077B0 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A470C194423929C27758049306F086ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF2EA8E435E6657C1CDFF0EED3CF0A77 /* Pods-synesthesia.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-synesthesia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-synesthesia/Pods-synesthesia.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_synesthesia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7A8FC5729DCD8E35790B56430BFEA77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9078482285855A70D58B40FCDBB6C12 /* SwiftyHue.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyHue/SwiftyHue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyHue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyHue/SwiftyHue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyHue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B2910505A3B6BAD4993B8A9F226424C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F86F04ABE4637524F75B94C342C1481 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBD7B7E767DA4984367D241406F6B896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F86F04ABE4637524F75B94C342C1481 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FF673F5706DCA9E24CA192AD13DDE805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9078482285855A70D58B40FCDBB6C12 /* SwiftyHue.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyHue/SwiftyHue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyHue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyHue/SwiftyHue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyHue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0403E1595573C7AB6E85945692B8CDBE /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD7B7E767DA4984367D241406F6B896 /* Debug */,
+				B2910505A3B6BAD4993B8A9F226424C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14612F4AB40E6B7CA746759E05040CDC /* Build configuration list for PBXNativeTarget "Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65EFFE430F01352B685473832905C497 /* Debug */,
+				60AF55DC03D094FAC830C290ED60ABEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C48CCCB862EC56A4174F6E1715688C9 /* Debug */,
+				621A10F5C0A994B466277661C1B2C19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D6B04AC06F1C9817F802A772FB1061 /* Build configuration list for PBXNativeTarget "Pods-synesthesia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AED05C60994A7B4E2AA34C2281CDD11 /* Debug */,
+				A470C194423929C27758049306F086ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0839CA0B99E24E6957CAA5D3DE8E32 /* Build configuration list for PBXNativeTarget "SwiftyHue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF673F5706DCA9E24CA192AD13DDE805 /* Debug */,
+				A7A8FC5729DCD8E35790B56430BFEA77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99F558792CFEB8051CE3610E79DA4CB /* Build configuration list for PBXNativeTarget "Gloss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9302130DB76983880CD5847320790D12 /* Debug */,
+				99359DD368BB6756AAAE391C83962860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

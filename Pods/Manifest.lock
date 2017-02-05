@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.0.1)
+  - AudioKit (3.5.1)
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - Gloss (1.0.0)
+  - Log (1.0)
+  - SwiftyHue (0.2.4):
+    - SwiftyHue/Base (= 0.2.4)
+    - SwiftyHue/BridgeServices (= 0.2.4)
+  - SwiftyHue/Base (0.2.4):
+    - Alamofire (~> 4.0.1)
+    - Gloss (~> 1.0.0)
+    - Log (~> 1.0)
+  - SwiftyHue/BridgeServices (0.2.4):
+    - Alamofire (~> 4.0.1)
+    - CocoaAsyncSocket (~> 7.4.3)
+    - Gloss (~> 1.0.0)
+    - Log (~> 1.0)
+
+DEPENDENCIES:
+  - AudioKit (~> 3.5)
+  - SwiftyHue (~> 0.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AudioKit: 7d3183b3f95b73c747348006d4085ac6207f71fc
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  Gloss: 014789e9e69ca18f127eacca999f4c9b0bff6d58
+  Log: 5e368c9528db07517d18d2d04ff5fe2b6f5a1e21
+  SwiftyHue: 2e2f71937614c301100ce150cc479aafdb1338ee
+
+PODFILE CHECKSUM: e6849ef49a1ace32de508e998f5e852afd35ea9e
+
+COCOAPODS: 1.2.0
