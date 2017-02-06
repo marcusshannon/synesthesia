@@ -21,20 +21,124 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finding Bridges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeS-3H-oI5">
-                                <rect key="frame" x="127" y="323" width="120" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looking for Bridge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeS-3H-oI5">
+                                <rect key="frame" x="117" y="323" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UeS-3H-oI5" firstAttribute="centerX" secondItem="lih-WZ-DVP" secondAttribute="centerX" id="KRT-VR-dkv"/>
+                            <constraint firstItem="UeS-3H-oI5" firstAttribute="centerY" secondItem="lih-WZ-DVP" secondAttribute="centerY" id="W1N-ob-Umk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Vl3-kP-9SX" kind="show" identifier="foundBridges" id="lGS-NB-kMw"/>
+                        <segue destination="SAN-eS-8TR" kind="show" identifier="foundBridge" id="WHu-n6-p6v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zL-bQ-lSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="71" y="138"/>
         </scene>
+        <!--Bridge Selection Table View Controller-->
+        <scene sceneID="dk9-ce-3AO">
+            <objects>
+                <tableViewController id="Vl3-kP-9SX" customClass="BridgeSelectionTableViewController" customModule="synesthesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fn3-Zf-lJR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="apQ-O7-JDH">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="apQ-O7-JDH" id="ANX-Lv-jGo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Zuy-u4-4nf" kind="show" identifier="selectedBridge" id="0aB-gh-uJp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vl3-kP-9SX" id="649-HB-ZFw"/>
+                            <outlet property="delegate" destination="Vl3-kP-9SX" id="6Zt-zt-VrW"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIl-lQ-QoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="137"/>
+        </scene>
+        <!--Bridge Push Link View Controller-->
+        <scene sceneID="pXC-Sc-Zj8">
+            <objects>
+                <viewController id="Zuy-u4-4nf" customClass="BridgePushLinkViewController" customModule="synesthesia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Tz-Zr-23o"/>
+                        <viewControllerLayoutGuide type="bottom" id="YSE-ml-53i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UJf-zh-Gqr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Hue Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-Cn-4eU">
+                                <rect key="frame" x="120" y="323" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5TX-Cn-4eU" firstAttribute="centerY" secondItem="UJf-zh-Gqr" secondAttribute="centerY" id="oYE-GT-6d9"/>
+                            <constraint firstItem="5TX-Cn-4eU" firstAttribute="centerX" secondItem="UJf-zh-Gqr" secondAttribute="centerX" id="vmc-6z-T6G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="SAN-eS-8TR" kind="show" identifier="authorizedBridge" id="J96-eK-gbd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6O-Uk-bbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YeD-pT-Ze8">
+            <objects>
+                <viewController id="SAN-eS-8TR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="meh-5F-Qp7"/>
+                        <viewControllerLayoutGuide type="bottom" id="wbO-yM-5Ai"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P0Y-vW-f5L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqI-dk-TZj">
+                                <rect key="frame" x="173" y="323" width="28" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EqI-dk-TZj" firstAttribute="centerY" secondItem="P0Y-vW-f5L" secondAttribute="centerY" id="9bp-Wp-WTi"/>
+                            <constraint firstItem="EqI-dk-TZj" firstAttribute="centerX" secondItem="P0Y-vW-f5L" secondAttribute="centerX" id="qsN-HT-my9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30E-Vx-tEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="864"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="J96-eK-gbd"/>
+    </inferredMetricsTieBreakers>
 </document>

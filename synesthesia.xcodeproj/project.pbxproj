@@ -13,6 +13,8 @@
 		D2675DE51E4563B3007A02A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE41E4563B3007A02A1 /* Assets.xcassets */; };
 		D2675DE81E4563B3007A02A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */; };
 		D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */; };
+		D26BE60D1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */; };
+		D26BE60F1E47E67700BC7B52 /* BridgePushLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		D2675DEE1E4563B4007A02A1 /* synesthesiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2675DF91E4563B4007A02A1 /* synesthesiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSelectionTableViewController.swift; sourceTree = "<group>"; };
+		D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgePushLinkViewController.swift; sourceTree = "<group>"; };
 		F1A68C82B6FED0562756B601 /* Pods_synesthesia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synesthesia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +111,9 @@
 			children = (
 				D2675DDD1E4563B3007A02A1 /* AppDelegate.swift */,
 				D2675DE11E4563B3007A02A1 /* Main.storyboard */,
+				D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */,
 				D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */,
+				D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */,
 				D2675DE41E4563B3007A02A1 /* Assets.xcassets */,
 				D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */,
 				D2675DE91E4563B3007A02A1 /* Info.plist */,
@@ -309,7 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2675DDE1E4563B3007A02A1 /* AppDelegate.swift in Sources */,
+				D26BE60D1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift in Sources */,
 				D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */,
+				D26BE60F1E47E67700BC7B52 /* BridgePushLinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
