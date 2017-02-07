@@ -15,6 +15,7 @@
 		D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */; };
 		D26BE60D1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */; };
 		D26BE60F1E47E67700BC7B52 /* BridgePushLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */; };
+		D28F27401E498B6C00F2C08D /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F273F1E498B6C00F2C08D /* MicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSelectionTableViewController.swift; sourceTree = "<group>"; };
 		D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgePushLinkViewController.swift; sourceTree = "<group>"; };
+		D28F273F1E498B6C00F2C08D /* MicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
 		F1A68C82B6FED0562756B601 /* Pods_synesthesia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synesthesia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			children = (
 				D2675DDD1E4563B3007A02A1 /* AppDelegate.swift */,
 				D2675DE11E4563B3007A02A1 /* Main.storyboard */,
+				D28F273F1E498B6C00F2C08D /* MicViewController.swift */,
 				D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */,
 				D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */,
 				D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */,
@@ -317,6 +320,7 @@
 				D2675DDE1E4563B3007A02A1 /* AppDelegate.swift in Sources */,
 				D26BE60D1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift in Sources */,
 				D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */,
+				D28F27401E498B6C00F2C08D /* MicViewController.swift in Sources */,
 				D26BE60F1E47E67700BC7B52 /* BridgePushLinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

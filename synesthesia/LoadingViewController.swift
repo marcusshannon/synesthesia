@@ -16,53 +16,54 @@ class LoadingViewController: UIViewController, BridgeFinderDelegate {
     let bridgeFinder = BridgeFinder()
     
     func bridgeFinder(_ finder: BridgeFinder, didFinishWithResult bridges: [HueBridge]) {
-        if (authBridge(bridges: bridges)) {
-            return
+        let prefs = UserDefaults.standard
+        if let bridgeId = prefs.string(forKey: "bridgeId"), let user = prefs.string(forKey: "user") {
+            for bridge in bridges {
+                if (bridge.serialNumber == bridgeId) {
+                    Alamofire.request("http://\(bridge.ip)/api/\(user)").validate().responseJSON { response in
+                        switch response.result {
+                        case .success(let value):
+                            let json = JSON(value)
+                            if json[0]["error"].string != nil {
+                                self.performSegue(withIdentifier: "foundBridges", sender: bridges)
+                            } else {
+                                UserDefaults.standard.set(bridge.ip, forKey: "ip")
+                                let bridgeAccessConfig = BridgeAccessConfig(bridgeId: bridgeId, ipAddress: bridge.ip, username: user)
+                                self.performSegue(withIdentifier: "foundBridge", sender: bridgeAccessConfig)
+                            }
+                        case .failure:
+                            self.performSegue(withIdentifier: "foundBridges", sender: bridges)
+                        }
+                    }
+                }
+            }
         }
         self.performSegue(withIdentifier: "foundBridges", sender: bridges)
     }
     
-    func authBridge(bridges: [HueBridge]) -> Bool {
-        let prefs = UserDefaults.standard
-        let bridgeId = prefs.string(forKey: "bridgeId")
-        let user = prefs.string(forKey: "user")
-        if (bridgeId != nil && user != nil) {
-            for bridge in bridges {
-                if (bridge.serialNumber == bridgeId) {
-                    let bridgeAccessConfig = BridgeAccessConfig(bridgeId: bridgeId!, ipAddress: bridge.ip, username: user!)
-                    self.performSegue(withIdentifier: "foundBridge", sender: bridgeAccessConfig)
-                    return true
-                }
-            }
-        }
-        return false
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.bridgeFinder.delegate = self;
+        
         let prefs = UserDefaults.standard
         if let bridgeId = prefs.string(forKey: "bridgeId"), let user = prefs.string(forKey: "user"), let ip = prefs.string(forKey: "ip") {
-            Alamofire.request("http://\(ip)/api/\(user)")
-                .validate()
-                .responseJSON { response in
-                    switch response.result {
-                    case .success(let value):
-                        let json = JSON(value)
-                        if json[0]["error"].string != nil {
-                            self.bridgeFinder.delegate = self;
-                            self.bridgeFinder.start()
-                        } else {
-                            let bridgeAccessConfig = BridgeAccessConfig(bridgeId: bridgeId, ipAddress: ip, username: user)
-                            self.performSegue(withIdentifier: "foundBridge", sender: bridgeAccessConfig)
-                        }
-                    case .failure:
-                        self.bridgeFinder.delegate = self
+            Alamofire.request("http://\(ip)/api/\(user)").validate().responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    if json[0]["error"].string != nil {
                         self.bridgeFinder.start()
+                    } else {
+                        let bridgeAccessConfig = BridgeAccessConfig(bridgeId: bridgeId, ipAddress: ip, username: user)
+                        self.performSegue(withIdentifier: "foundBridge", sender: bridgeAccessConfig)
                     }
+                case .failure:
+                    self.bridgeFinder.start()
+                }
             }
         }
         else {
-            self.bridgeFinder.delegate = self
             self.bridgeFinder.start()
         }
     }
@@ -82,6 +83,10 @@ class LoadingViewController: UIViewController, BridgeFinderDelegate {
         // Pass the selected object to the new view controller.
         if let dest = segue.destination as? BridgeSelectionTableViewController {
             dest.bridges = sender as? [HueBridge]
+        }
+        
+        if let dest = segue.destination as? MicViewController {
+            dest.bridgeAccessConfig = sender as? BridgeAccessConfig
         }
     }
 }

@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1702" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--Mic View Controller-->
         <scene sceneID="YeD-pT-Ze8">
             <objects>
-                <viewController id="SAN-eS-8TR" sceneMemberID="viewController">
+                <viewController id="SAN-eS-8TR" customClass="MicViewController" customModule="synesthesia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="meh-5F-Qp7"/>
                         <viewControllerLayoutGuide type="bottom" id="wbO-yM-5Ai"/>
@@ -119,19 +119,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqI-dk-TZj">
-                                <rect key="frame" x="173" y="323" width="28" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-VV-BZD" customClass="EZAudioPlot">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="EqI-dk-TZj" firstAttribute="centerY" secondItem="P0Y-vW-f5L" secondAttribute="centerY" id="9bp-Wp-WTi"/>
-                            <constraint firstItem="EqI-dk-TZj" firstAttribute="centerX" secondItem="P0Y-vW-f5L" secondAttribute="centerX" id="qsN-HT-my9"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="audioInputPlot" destination="g6c-VV-BZD" id="CV2-FV-wda"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30E-Vx-tEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
