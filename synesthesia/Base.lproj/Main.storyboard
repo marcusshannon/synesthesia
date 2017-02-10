@@ -22,6 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOl-OP-lTG">
+                                <rect key="frame" x="142" y="629" width="90" height="30"/>
+                                <state key="normal" title="Select Lights"/>
+                                <connections>
+                                    <action selector="startListening" destination="SAN-eS-8TR" eventType="touchUpInside" id="drH-WA-f10"/>
+                                </connections>
+                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZeP-0r-qLM">
                                 <rect key="frame" x="163" y="318" width="51" height="31"/>
                                 <connections>
@@ -29,31 +36,25 @@
                                 </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-va-KJA">
-                                <rect key="frame" x="144" y="501" width="173" height="31"/>
+                                <rect key="frame" x="148" y="501" width="169" height="31"/>
                                 <connections>
                                     <action selector="sensitivityChanged:" destination="SAN-eS-8TR" eventType="valueChanged" id="6oc-IO-16k"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NGo-h6-phI">
-                                <rect key="frame" x="144" y="577" width="173" height="31"/>
+                                <rect key="frame" x="148" y="577" width="169" height="31"/>
                                 <connections>
                                     <action selector="minimumChanged:" destination="SAN-eS-8TR" eventType="valueChanged" id="zWD-yG-dcP"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="U85-Tn-3pZ">
-                                <rect key="frame" x="144" y="539" width="173" height="31"/>
+                                <rect key="frame" x="148" y="539" width="169" height="31"/>
                                 <connections>
                                     <action selector="maximumChanged:" destination="SAN-eS-8TR" eventType="valueChanged" id="zbc-KS-8AP"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI3-fN-qfn">
                                 <rect key="frame" x="173" y="357" width="28" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensitvity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDA-7T-Rfk">
-                                <rect key="frame" x="60" y="506" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -70,13 +71,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOl-OP-lTG">
-                                <rect key="frame" x="142" y="629" width="90" height="30"/>
-                                <state key="normal" title="Select Lights"/>
-                                <connections>
-                                    <action selector="startListening" destination="SAN-eS-8TR" eventType="touchUpInside" id="drH-WA-f10"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensitivity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDA-7T-Rfk">
+                                <rect key="frame" x="60" y="506" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
