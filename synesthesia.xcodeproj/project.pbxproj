@@ -204,6 +204,11 @@
 					D2675DD91E4563B3007A02A1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					D2675DED1E4563B4007A02A1 = {
 						CreatedOnToolsVersion = 8.2.1;
