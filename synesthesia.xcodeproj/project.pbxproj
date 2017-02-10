@@ -12,9 +12,6 @@
 		D2675DE31E4563B3007A02A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE11E4563B3007A02A1 /* Main.storyboard */; };
 		D2675DE51E4563B3007A02A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE41E4563B3007A02A1 /* Assets.xcassets */; };
 		D2675DE81E4563B3007A02A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */; };
-		D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */; };
-		D26BE60D1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */; };
-		D26BE60F1E47E67700BC7B52 /* BridgePushLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */; };
 		D28F27401E498B6C00F2C08D /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F273F1E498B6C00F2C08D /* MicViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,9 +43,6 @@
 		D2675DE91E4563B3007A02A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2675DEE1E4563B4007A02A1 /* synesthesiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2675DF91E4563B4007A02A1 /* synesthesiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSelectionTableViewController.swift; sourceTree = "<group>"; };
-		D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgePushLinkViewController.swift; sourceTree = "<group>"; };
 		D28F273F1E498B6C00F2C08D /* MicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
 		F1A68C82B6FED0562756B601 /* Pods_synesthesia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synesthesia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,9 +108,6 @@
 				D2675DDD1E4563B3007A02A1 /* AppDelegate.swift */,
 				D2675DE11E4563B3007A02A1 /* Main.storyboard */,
 				D28F273F1E498B6C00F2C08D /* MicViewController.swift */,
-				D26BE60E1E47E67700BC7B52 /* BridgePushLinkViewController.swift */,
-				D26BE60A1E463C6200BC7B52 /* LoadingViewController.swift */,
-				D26BE60C1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift */,
 				D2675DE41E4563B3007A02A1 /* Assets.xcassets */,
 				D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */,
 				D2675DE91E4563B3007A02A1 /* Info.plist */,
@@ -203,6 +194,7 @@
 				TargetAttributes = {
 					D2675DD91E4563B3007A02A1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NW4M7VKB52;
 						ProvisioningStyle = Automatic;
 					};
 					D2675DED1E4563B4007A02A1 = {
@@ -318,10 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2675DDE1E4563B3007A02A1 /* AppDelegate.swift in Sources */,
-				D26BE60D1E47DD3800BC7B52 /* BridgeSelectionTableViewController.swift in Sources */,
-				D26BE60B1E463C6200BC7B52 /* LoadingViewController.swift in Sources */,
 				D28F27401E498B6C00F2C08D /* MicViewController.swift in Sources */,
-				D26BE60F1E47E67700BC7B52 /* BridgePushLinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +459,8 @@
 			baseConfigurationReference = 09D63BCDA0D36F133D73E7FC /* Pods-synesthesia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NW4M7VKB52;
 				INFOPLIST_FILE = synesthesia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesia;
@@ -483,6 +474,8 @@
 			baseConfigurationReference = 35E23FC3F5F94A25F02C34E0 /* Pods-synesthesia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NW4M7VKB52;
 				INFOPLIST_FILE = synesthesia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcusshannon.synesthesia;
