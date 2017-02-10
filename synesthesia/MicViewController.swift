@@ -26,14 +26,18 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
     @IBOutlet weak var micSwitch: UISwitch!
     
     @IBAction func micSwitchChanged(_ sender: UISwitch) {
-        AudioKit.output = silence
-        AudioKit.start()
-        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateLights), userInfo: nil, repeats: true)
+        
+        if sender.isOn {
+            AudioKit.output = silence
+            AudioKit.start()
+            Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateLights), userInfo: nil, repeats: true)
+        } else {
+            AudioKit.stop()
+        }
     }
     
     func updateLights() {
-        let bri = Int(log10(tracker.amplitude + 1.0) * 1000.0)
-        print(bri)
+        let bri = Int(tracker.amplitude * 255)
         
         let parameters: Parameters = [
             "bri": bri,
