@@ -34,7 +34,7 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
         if sender.isOn {
             AudioKit.output = silence
             AudioKit.start()
-            Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(self.updateLights), userInfo: nil, repeats: true)
+            Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateLights), userInfo: nil, repeats: true)
         } else {
             AudioKit.stop()
         }
@@ -48,7 +48,7 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
             "transitiontime": 1
         ]
         
-        Alamofire.request("http://\(bridgeConfig!.ip)/api/\(bridgeConfig!.user)/lights/1/state", method: .put, parameters: parameters, encoding: JSONEncoding(options: []))
+        Alamofire.request("http://\(bridgeConfig!.ip)/api/\(bridgeConfig!.user)/lights/\(self.selectedLight)/state", method: .put, parameters: parameters, encoding: JSONEncoding(options: []))
             .response { res in
         }
     }
