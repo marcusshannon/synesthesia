@@ -18,6 +18,10 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
     var tracker: AKAmplitudeTracker!
     var silence: AKBooster!
     
+    var lights: [(name: String, index: String)]?
+    var selectedLight = 1
+
+    var light: Int?
     var bridge: HueBridge?
     let bridgeFinder = BridgeFinder()
     var alert: UIAlertController?
@@ -30,14 +34,14 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
         if sender.isOn {
             AudioKit.output = silence
             AudioKit.start()
-            Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateLights), userInfo: nil, repeats: true)
+            Timer.scheduledTimer(timeInterval: 0.15, target: self, selector: #selector(self.updateLights), userInfo: nil, repeats: true)
         } else {
             AudioKit.stop()
         }
     }
     
     func updateLights() {
-        let bri = Int(tracker.amplitude * 255)
+        let bri = min(Int(tracker.amplitude * 255 * (self.sensitivity.value + 1)), 254)
         
         let parameters: Parameters = [
             "bri": bri,
@@ -104,13 +108,17 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
         self.bridge = bridges[0]
         let prefs = UserDefaults.standard
         if let user = prefs.string(forKey: "user") {
-            Alamofire.request("http://\(bridge!.ip)/api/\(user)").validate().responseJSON { response in
+            Alamofire.request("http://\(bridge!.ip)/api/\(user)/lights").validate().responseJSON { response in
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
                     if json[0]["error"].string != nil {
                         self.authorizeBridge()
                     } else {
+                        self.lights = []
+                        for (key,subJson):(String, JSON) in json {
+                            self.lights!.append((name: subJson["name"].string!, index: key))
+                        }
                         UserDefaults.standard.set(self.bridge!.ip, forKey: "ip")
                         self.bridgeConfig = (self.bridge!.ip, user)
                         self.micSwitch.isEnabled = true
@@ -127,12 +135,10 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         AKSettings.audioInputEnabled = true
         mic = AKMicrophone()
         tracker = AKAmplitudeTracker.init(mic)
         silence = AKBooster(tracker, gain: 0)
-
     }
     
     func lookForBridge() {
@@ -156,7 +162,7 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
         let prefs = UserDefaults.standard
         if let user = prefs.string(forKey: "user"), let ip = prefs.string(forKey: "ip") {
             //Send request to bridge
-            Alamofire.request("http://\(ip)/api/\(user)").validate().responseJSON { response in
+            Alamofire.request("http://\(ip)/api/\(user)/lights").validate().responseJSON { response in
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
@@ -165,6 +171,10 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
                         self.lookForBridge()
                     }
                     else {
+                        self.lights = []
+                        for (key,subJson):(String, JSON) in json {
+                            self.lights!.append((name: subJson["name"].string!, index: key))
+                        }
                         self.bridgeConfig = (ip, user)
                         self.micSwitch.isEnabled = true
                     }
@@ -179,14 +189,15 @@ class MicViewController: UIViewController, BridgeFinderDelegate, BridgeAuthentic
     }
     
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
+        print("switching")
      }
-     */
+    
     
 }

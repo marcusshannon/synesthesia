@@ -13,6 +13,7 @@
 		D2675DE51E4563B3007A02A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE41E4563B3007A02A1 /* Assets.xcassets */; };
 		D2675DE81E4563B3007A02A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */; };
 		D28F27401E498B6C00F2C08D /* MicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F273F1E498B6C00F2C08D /* MicViewController.swift */; };
+		D2AC91B21E4EA2BA00F7E15C /* LightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC91B11E4EA2BA00F7E15C /* LightTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D2675DEE1E4563B4007A02A1 /* synesthesiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2675DF91E4563B4007A02A1 /* synesthesiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = synesthesiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28F273F1E498B6C00F2C08D /* MicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicViewController.swift; sourceTree = "<group>"; };
+		D2AC91B11E4EA2BA00F7E15C /* LightTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTableViewController.swift; sourceTree = "<group>"; };
 		F1A68C82B6FED0562756B601 /* Pods_synesthesia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_synesthesia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 			children = (
 				D2675DDD1E4563B3007A02A1 /* AppDelegate.swift */,
 				D2675DE11E4563B3007A02A1 /* Main.storyboard */,
+				D2AC91B11E4EA2BA00F7E15C /* LightTableViewController.swift */,
 				D28F273F1E498B6C00F2C08D /* MicViewController.swift */,
 				D2675DE41E4563B3007A02A1 /* Assets.xcassets */,
 				D2675DE61E4563B3007A02A1 /* LaunchScreen.storyboard */,
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AC91B21E4EA2BA00F7E15C /* LightTableViewController.swift in Sources */,
 				D2675DDE1E4563B3007A02A1 /* AppDelegate.swift in Sources */,
 				D28F27401E498B6C00F2C08D /* MicViewController.swift in Sources */,
 			);
